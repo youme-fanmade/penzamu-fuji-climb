@@ -1,0 +1,2638 @@
+<!DOCTYPE html>
+<html lang="ja">
+<!-- 
+
+##    ## ##     ## ##     ## ##    ##    ###       ##     ## ########  ########     #### 
+ ##  ##  ##     ## ##     ## ##   ##    ## ##      ##     ## ##     ## ##     ##    #### 
+  ####   ##     ## ##     ## ##  ##    ##   ##     ##     ## ##     ## ##     ##    #### 
+   ##    ##     ## ##     ## #####    ##     ##    ######### ########  ##     ##     ##  
+   ##    ##     ## ##     ## ##  ##   #########    ##     ## ##     ## ##     ##         
+   ##    ##     ## ##     ## ##   ##  ##     ##    ##     ## ##     ## ##     ##    #### 
+   ##     #######   #######  ##    ## ##     ##    ##     ## ########  ########     ####                                                                                                                                                                                                                                                                                                                                                
+
+-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>ぺんざむの！富士山のぼれるかな？</title>
+  <meta name="description" content="ぺんざむが富士山に挑む、ファンによる非公式の自主制作ミニゲーム。">
+  <meta name="msapplication-square70x70logo" content="assets/images/favicon/site-tile-70x70.png">
+  <meta name="msapplication-square150x150logo" content="assets/images/favicon/site-tile-150x150.png">
+  <meta name="msapplication-wide310x150logo" content="assets/images/favicon/site-tile-310x150.png">
+  <meta name="msapplication-square310x310logo" content="assets/images/favicon/site-tile-310x310.png">
+  <meta name="msapplication-TileColor" content="#0078d7">
+  <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="assets/images/favicon/favicon.ico">
+  <link rel="icon" type="image/vnd.microsoft.icon" href="assets/images/favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicon/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicon/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicon/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicon/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicon/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicon/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicon/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="36x36" href="assets/images/favicon/android-chrome-36x36.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="assets/images/favicon/android-chrome-48x48.png">
+  <link rel="icon" type="image/png" sizes="72x72" href="assets/images/favicon/android-chrome-72x72.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon/android-chrome-96x96.png">
+  <link rel="icon" type="image/png" sizes="128x128" href="assets/images/favicon/android-chrome-128x128.png">
+  <link rel="icon" type="image/png" sizes="144x144" href="assets/images/favicon/android-chrome-144x144.png">
+  <link rel="icon" type="image/png" sizes="152x152" href="assets/images/favicon/android-chrome-152x152.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="256x256" href="assets/images/favicon/android-chrome-256x256.png">
+  <link rel="icon" type="image/png" sizes="384x384" href="assets/images/favicon/android-chrome-384x384.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/images/favicon/android-chrome-512x512.png">
+  <link rel="icon" type="image/png" sizes="36x36" href="assets/images/favicon/icon-36x36.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="assets/images/favicon/icon-48x48.png">
+  <link rel="icon" type="image/png" sizes="72x72" href="assets/images/favicon/icon-72x72.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon/icon-96x96.png">
+  <link rel="icon" type="image/png" sizes="128x128" href="assets/images/favicon/icon-128x128.png">
+  <link rel="icon" type="image/png" sizes="144x144" href="assets/images/favicon/icon-144x144.png">
+  <link rel="icon" type="image/png" sizes="152x152" href="assets/images/favicon/icon-152x152.png">
+  <link rel="icon" type="image/png" sizes="160x160" href="assets/images/favicon/icon-160x160.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon/icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="196x196" href="assets/images/favicon/icon-196x196.png">
+  <link rel="icon" type="image/png" sizes="256x256" href="assets/images/favicon/icon-256x256.png">
+  <link rel="icon" type="image/png" sizes="384x384" href="assets/images/favicon/icon-384x384.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/images/favicon/icon-512x512.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/icon-16x16.png">
+  <link rel="icon" type="image/png" sizes="24x24" href="assets/images/favicon/icon-24x24.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/icon-32x32.png">
+  <link rel="manifest" href="assets/images/favicon/manifest.json">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --indigo-deep: #0b1226;
+      --cream: #f3ede0;
+      --gold-rgb: 224, 184, 98;
+      --gold: rgb(var(--gold-rgb));
+      --coral: #ff8a5b;
+      --danger: #e2555a;
+      --gold-gradient: linear-gradient(180deg, #ffd9a8, var(--gold));
+      /* 金色ボタンの縁・影 */
+      --gold-dark: #a67a30;
+      --hairline: max(1px, calc(0.25 * var(--u)));
+      --stage-w: min(100vw, calc(100vh * 9 / 16));
+      --stage-h: min(100vh, calc(100vw * 16 / 9));
+      /* UI寸法の基準単位: --u=描画領域の幅の1%、--v=描画領域の高さの1%(UIはすべてこの倍数で指定する)。 */
+      --u: calc(var(--stage-w) / 100);
+      --v: calc(var(--stage-h) / 100);
+    }
+
+    /* iPhone Safariでは100vhがツールバー分を含み下端が見切れるため、対応ブラウザでは実際に見える高さ(dvh)を使う。 */
+    @supports (height: 100dvh) {
+      :root {
+        --stage-w: min(100vw, calc(100dvh * 9 / 16));
+        --stage-h: min(100dvh, calc(100vw * 16 / 9));
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      -webkit-touch-callout: none;
+      -webkit-user-drag: none;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      background: var(--indigo-deep);
+      font-family: 'M PLUS Rounded 1c', sans-serif;
+      color: var(--cream);
+      overflow: hidden;
+      touch-action: manipulation; /* ダブルタップ拡大を無効化(プレイ画面は #canvasWrap で none に戻す) */
+    }
+
+    /* ゲーム全体の文字は「M PLUS Rounded 1c」の Extra Bold(800)に統一。 */
+    body {
+      font-weight: 800;
+    }
+
+    button,
+    input,
+    h1,
+    h2,
+    b,
+    strong {
+      font-family: inherit;
+      font-weight: 800;
+    }
+
+    #app {
+      position: fixed;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: radial-gradient(ellipse at 50% 20%, #1c2947 0%, #0b1226 70%);
+    }
+
+    .screen {
+      position: absolute;
+      inset: 0;
+      margin: auto;
+      width: var(--stage-w);
+      height: var(--stage-h);
+      font-size: calc(4.1 * var(--u));
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: opacity .5s ease;
+    }
+
+    .hidden {
+      display: none !important;
+    }
+
+    /* ---------- START ---------- */
+    #screen-start {
+      background: #a8e4f6;
+    }
+
+    #screen-start.mode-hard,
+    #screen-result.mode-hard {
+      background: #ffd3a3;
+    }
+
+    .title-stage {
+      position: relative;
+      z-index: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: calc(6 * var(--v)) calc(8 * var(--u));
+      text-align: center;
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+
+    .eyebrow-mark {
+      font-size: calc(2.8 * var(--u));
+      letter-spacing: .32em;
+      color: #8a641f;
+      margin-bottom: 0.8em;
+      line-height: 1.6;
+      opacity: .85;
+    }
+
+    /* タイトルロゴ(画像ロゴがない場合) */
+    .title-logo {
+      font-size: calc(10.5 * var(--u));
+      line-height: 1.25;
+      letter-spacing: .03em;
+      color: var(--indigo-deep);
+      margin: 0;
+      writing-mode: horizontal-tb;
+    }
+
+    .title-logo-sub {
+      font-size: 0.55em;
+      display: inline-block;
+    }
+
+    .title-logo-img {
+      width: calc(90 * var(--u));
+      max-width: none;
+      height: auto;
+      object-fit: contain;
+    }
+
+    .start-btn {
+      margin-top: calc(5 * var(--v));
+      font-size: calc(4.6 * var(--u));
+      letter-spacing: .1em;
+      color: var(--indigo-deep);
+      background: var(--gold-gradient);
+      border: none;
+      border-radius: 100px;
+      padding: 1.05em 3em;
+      box-shadow: 0 calc(1.5 * var(--u)) 0 var(--gold-dark), 0 calc(2.5 * var(--u)) calc(6.2 * var(--u)) rgba(0, 0, 0, .4);
+      cursor: pointer;
+      transform: translateY(0);
+      transition: transform .08s ease, box-shadow .08s ease;
+    }
+
+    /* モード選択(一度登頂した後だけタイトル画面に表示される) */
+    .mode-select {
+      margin-top: calc(3 * var(--v));
+      display: flex;
+      gap: calc(2 * var(--u));
+      justify-content: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .mode-select:not(.hidden)+.start-btn {
+      margin-top: calc(3 * var(--v));
+    }
+
+    .mode-btn {
+      font-size: calc(3.2 * var(--u));
+      letter-spacing: .05em;
+      color: #33475c;
+      background: rgba(255, 255, 255, .55);
+      border: max(1px, calc(0.5 * var(--u))) solid rgba(51, 71, 92, .35);
+      border-radius: 100px;
+      padding: .6em 1.2em;
+      cursor: pointer;
+    }
+
+    .mode-btn.selected {
+      color: var(--indigo-deep);
+      background: var(--gold-gradient);
+      border-color: var(--gold-dark);
+    }
+
+    .mode-btn[data-mode="hard"].selected {
+      color: #fff;
+      background: linear-gradient(180deg, #e0605a, #b02a2a);
+      border-color: #7d1b1b;
+    }
+
+    .start-btn:active {
+      transform: translateY(calc(1.3 * var(--u)));
+      box-shadow: 0 calc(0.25 * var(--u)) 0 var(--gold-dark), 0 calc(1 * var(--u)) calc(3.6 * var(--u)) rgba(0, 0, 0, .35);
+    }
+
+    .rules {
+      margin-top: calc(3 * var(--v));
+      font-size: calc(2.95 * var(--u));
+      color: #33475c;
+      line-height: 1.9;
+      max-width: calc(90 * var(--u));
+      position: relative;
+      z-index: 1;
+      background: rgba(255, 255, 255, .75);
+      border-radius: calc(4.1 * var(--u));
+      padding: 1em 1.3em;
+    }
+
+    .rules b {
+      color: var(--coral);
+    }
+
+    .version-tag {
+      position: absolute;
+      right: 3%;
+      bottom: 2%;
+      font-size: calc(2.3 * var(--u));
+      color: rgba(16, 23, 37, .4);
+      letter-spacing: .04em;
+    }
+
+    /* ---------- PLAY ---------- */
+    #screen-play {
+      background: #000;
+    }
+
+    #canvasWrap {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      touch-action: none; /* ドラッグ操作をブラウザのパン等に奪われないようにする */
+      box-shadow: 0 0 calc(15 * var(--u)) rgba(0, 0, 0, .6);
+    }
+
+    #gameCanvas {
+      width: 100%;
+      height: 100%;
+      display: block;
+      background: #111;
+    }
+
+    .hud {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+    }
+
+    .hud-top {
+      position: absolute;
+      top: 2.2%;
+      left: 4%;
+      right: 4%;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .stat-box,
+    #pauseBtn {
+      background: rgba(11, 18, 38, .55);
+      border: var(--hairline) solid rgba(var(--gold-rgb), .4);
+      border-radius: calc(2.6 * var(--u));
+      backdrop-filter: blur(calc(0.8 * var(--u)));
+      /* iOS Safariでは、下のcanvasが動いてもアニメーションが無いとブラーが更新されないため、見えない程度の常時アニメーションで毎フレーム更新させる。 */
+      animation: backdrop-refresh .5s linear infinite alternate;
+    }
+
+    @keyframes backdrop-refresh {
+      from { opacity: .999; }
+      to { opacity: 1; }
+    }
+
+    .stat-box {
+      padding: .5em .9em;
+      min-width: calc(27 * var(--u));
+      box-sizing: border-box;
+    }
+
+    .stat-label {
+      font-size: calc(2.05 * var(--u));
+      letter-spacing: .15em;
+      color: var(--gold);
+      opacity: .9;
+    }
+
+    .stat-value {
+      font-size: calc(4 * var(--u));
+      line-height: 1.3;
+    }
+
+    .lives {
+      display: flex;
+      gap: .55em;
+      margin-top: .15em;
+    }
+
+    .life-heart {
+      width: calc(4.6 * var(--u));
+      height: calc(4.6 * var(--u));
+      background: var(--danger);
+      -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 18'%3E%3Cpath d='M9 16C9 16 1 10.5 1 5.6C1 2.8 3.1 1 5.4 1C7 1 8.3 1.9 9 3.2C9.7 1.9 11 1 12.6 1C14.9 1 17 2.8 17 5.6C17 10.5 9 16 9 16Z'/%3E%3C/svg%3E") center / 100% 100% no-repeat;
+      mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 18'%3E%3Cpath d='M9 16C9 16 1 10.5 1 5.6C1 2.8 3.1 1 5.4 1C7 1 8.3 1.9 9 3.2C9.7 1.9 11 1 12.6 1C14.9 1 17 2.8 17 5.6C17 10.5 9 16 9 16Z'/%3E%3C/svg%3E") center / 100% 100% no-repeat;
+      opacity: 1;
+      transition: opacity .2s;
+    }
+
+    .life-heart.lost {
+      opacity: .18;
+    }
+
+    .progress-wrap {
+      position: absolute;
+      top: 2.2%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 36%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .progress-track {
+      width: 100%;
+      height: calc(1.8 * var(--u));
+      border-radius: calc(1.3 * var(--u));
+      background: rgba(255, 255, 255, .15);
+      border: var(--hairline) solid rgba(var(--gold-rgb), .35);
+      overflow: hidden;
+      margin-top: .35em;
+    }
+
+    .progress-fill {
+      height: 100%;
+      width: 0%;
+      background: var(--coral);
+      border-radius: calc(1.3 * var(--u));
+      transition: width .15s linear;
+    }
+
+    .progress-text {
+      font-size: calc(2.3 * var(--u));
+      color: #dbe3f2;
+      margin-top: .35em;
+      letter-spacing: .04em;
+    }
+
+    #boostBtn {
+      position: absolute;
+      right: 4%;
+      bottom: 3.5%;
+      width: calc(20 * var(--u));
+      height: calc(20 * var(--u));
+      border-radius: 50%;
+      background: radial-gradient(circle at 35% 30%, #ffcf94, var(--coral) 70%);
+      border: max(1px, calc(0.8 * var(--u))) solid rgba(255, 255, 255, .5);
+      box-shadow: 0 calc(1.5 * var(--u)) 0 #b8522b, 0 calc(2.5 * var(--u)) calc(5.6 * var(--u)) rgba(0, 0, 0, .5);
+      color: #3a1707;
+      font-size: calc(3.2 * var(--u));
+      letter-spacing: .05em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      pointer-events: auto;
+      transform: translateY(0);
+      transition: transform .06s, box-shadow .06s, filter .15s;
+    }
+
+    #boostBtn.active {
+      transform: translateY(calc(1.3 * var(--u)));
+      box-shadow: 0 calc(0.25 * var(--u)) 0 #b8522b, 0 calc(1 * var(--u)) calc(3 * var(--u)) rgba(0, 0, 0, .4);
+      filter: brightness(1.15);
+    }
+
+    #boostBtn span {
+      pointer-events: none;
+    }
+
+    .hint-controls {
+      position: absolute;
+      left: 4%;
+      bottom: 3.5%;
+      font-size: calc(2.4 * var(--u));
+      color: rgba(230, 236, 248, .65);
+      line-height: 1.7;
+      background: rgba(11, 18, 38, .4);
+      border-radius: calc(2 * var(--u));
+      padding: .5em .7em;
+    }
+
+    /* 登頂後の日の出シーン中は、加速ボタンと操作説明を隠す(JS側 loop() が is-summit を付け外し) */
+    #canvasWrap.is-summit #boostBtn,
+    #canvasWrap.is-summit .hint-controls {
+      visibility: hidden;
+    }
+
+    .flash-overlay {
+      position: absolute;
+      inset: 0;
+      background: var(--danger);
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    /* ---------- ポーズ(一時停止) ---------- */
+    .hud-right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: calc(2 * var(--u));
+    }
+
+    #pauseBtn {
+      width: calc(9 * var(--u));
+      height: calc(9 * var(--u));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 22%;
+      padding: 0;
+      cursor: pointer;
+      pointer-events: auto;
+      /* .hud全体は pointer-events:none のため、ボタンだけ有効にする */
+    }
+
+    #pauseBtn i {
+      display: block;
+      width: 12%;
+      height: 36%;
+      background: #fff;
+      border-radius: calc(0.5 * var(--u));
+      pointer-events: none;
+    }
+
+    #pauseBtn:active {
+      filter: brightness(1.4);
+    }
+
+    .pause-overlay {
+      position: absolute;
+      inset: 0;
+      z-index: 5;
+      background: rgba(11, 18, 38, .62);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: calc(5.6 * var(--u));
+      color: #fff;
+    }
+
+    .pause-title {
+      font-size: calc(6.5 * var(--u));
+      letter-spacing: .2em;
+    }
+
+    .pause-resume-btn,
+    .pause-ending-btn {
+      font-size: calc(4 * var(--u));
+      letter-spacing: .1em;
+      color: var(--indigo-deep);
+      background: var(--gold-gradient);
+      border: max(1px, calc(0.5 * var(--u))) solid var(--gold-dark);
+      border-radius: 100px;
+      padding: .8em 0;
+      width: calc(64 * var(--u)); /* 2つのボタンの横幅を揃える固定幅(文字数が多い方に余裕を持たせた値) */
+      cursor: pointer;
+    }
+
+    /* ---------- RESULT ---------- */
+    #screen-result {
+      background: #a8e4f6;
+      padding: calc(6 * var(--v)) calc(8 * var(--u));
+      text-align: center;
+    }
+
+    /* モード解放のお知らせトースト(初めて登頂した時だけ、リザルト画面の上部に表示) */
+    .unlock-toast {
+      position: absolute;
+      top: 3%;
+      left: 50%;
+      transform: translateX(-50%) translateY(calc(-3 * var(--u)));
+      width: min(88%, calc(97 * var(--u)));
+      box-sizing: border-box;
+      padding: .8em 1.1em;
+      background: rgba(11, 18, 38, .9);
+      color: #fff;
+      border: var(--hairline) solid rgba(var(--gold-rgb), .6);
+      border-radius: calc(3.6 * var(--u));
+      box-shadow: 0 calc(1.5 * var(--u)) calc(4.6 * var(--u)) rgba(0, 0, 0, .35);
+      font-size: calc(3.4 * var(--u));
+      line-height: 1.6;
+      text-align: center;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity .35s ease, transform .35s ease;
+      z-index: 10;
+    }
+
+    .unlock-toast.show {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+
+    .result-tag {
+      font-size: calc(2.8 * var(--u));
+      letter-spacing: .28em;
+      color: #8a641f;
+      margin-bottom: .6em;
+    }
+
+    .result-title {
+      font-size: calc(8 * var(--u));
+      color: var(--indigo-deep);
+      margin: 0 0 .3em 0;
+    }
+
+    /* ゲームオーバー時: キャラクターが喋っているような吹き出し演出 */
+    .gameover-scene {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: calc(0.6 * var(--v));
+      max-width: calc(87 * var(--u));
+      margin: calc(2.2 * var(--v)) auto calc(0.6 * var(--v));
+      text-align: left;
+    }
+
+    .gameover-character {
+      width: calc(15 * var(--u));
+      height: auto;
+      flex-shrink: 0;
+    }
+
+    /* PNGキャラクター用のラッパー。PNGには影が無いため、足元の影を疑似要素で描く。 */
+    .gameover-character-wrap {
+      position: relative;
+      display: block;
+      line-height: 0;
+      flex-shrink: 0;
+    }
+
+    .gameover-character-wrap::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: -3%;
+      width: 72%;
+      height: 13%;
+      transform: translateX(-50%);
+      background: rgba(0, 0, 0, .3);
+      border-radius: 50%;
+    }
+
+    .gameover-character-wrap>.gameover-character {
+      position: relative;
+      /* 影(::before)より手前に描画する */
+      display: block;
+    }
+
+    .speech-bubble {
+      position: relative;
+      color: #2a2115;
+      padding: .9em 1.6em 1.5em 1.6em;
+      font-size: calc(3.1 * var(--u));
+      line-height: 1.6;
+    }
+
+    .speech-bubble-bg {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      display: block;
+      filter: drop-shadow(0 calc(1 * var(--u)) calc(2.6 * var(--u)) rgba(0, 0, 0, .28));
+    }
+
+    .speech-bubble-text {
+      position: relative;
+      z-index: 1;
+      display: block;
+    }
+
+    .result-cards {
+      display: flex;
+      gap: calc(3.5 * var(--u));
+      margin: calc(4 * var(--v)) 0 calc(1 * var(--v)) 0;
+    }
+
+    .result-card {
+      background: rgba(255, 255, 255, .55);
+      border: var(--hairline) solid rgba(var(--gold-rgb), .5);
+      border-radius: calc(3.6 * var(--u));
+      padding: 1.1em 1.6em;
+      min-width: calc(30 * var(--u));
+    }
+
+    .result-card .k {
+      font-size: calc(2.3 * var(--u));
+      color: #3a4a63;
+      letter-spacing: .12em;
+    }
+
+    .result-card .v {
+      font-size: calc(6 * var(--u));
+      color: var(--indigo-deep);
+      margin-top: .25em;
+    }
+
+    .result-link {
+      margin-top: calc(3 * var(--v));
+      font-size: calc(4 * var(--u));
+      color: #8a641f;
+      text-decoration: none;
+      border-bottom: var(--hairline) solid rgba(138, 100, 31, .5);
+      padding-bottom: calc(0.5 * var(--u));
+    }
+
+    .result-actions {
+      margin-top: calc(5 * var(--v));
+      display: flex;
+      flex-direction: column;
+      gap: 1.1em;
+      align-items: center;
+    }
+
+    .btn-share {
+      display: flex;
+      align-items: center;
+      gap: .55em;
+      background: #000;
+      color: #fff;
+      border: var(--hairline) solid rgba(255, 255, 255, .5);
+      border-radius: 100px;
+      padding: .85em 2.4em;
+      font-size: calc(3.4 * var(--u));
+      cursor: pointer;
+    }
+
+    /* Xロゴ(HTML側のwidth/height属性は固定pxなので、舞台に合わせてCSSで上書きする) */
+    .btn-share svg {
+      width: calc(3.85 * var(--u));
+      height: calc(3.85 * var(--u));
+      flex-shrink: 0;
+    }
+
+    .btn-retry {
+      background: none;
+      border: none;
+      color: #33475c;
+      font-size: calc(3.1 * var(--u));
+      letter-spacing: .05em;
+      text-decoration: underline;
+      cursor: pointer;
+      padding: .5em;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app">
+
+    <!-- START SCREEN -->
+    <section id="screen-start" class="screen hidden">
+      <div class="title-stage">
+        <div class="eyebrow-mark">陽葵優叶誕生祭2026開催記念<br>ファン制作ミニゲーム</div>
+        <h1 class="title-logo"><span class="title-logo-sub">ぺんざむの！</span><br>富士山<br>のぼれるかな？</h1>
+        <div class="mode-select hidden" id="modeSelect">
+          <button class="mode-btn selected" type="button" data-mode="normal">普通モード</button>
+          <button class="mode-btn" type="button" data-mode="hard">生きむずモード</button>
+        </div>
+        <button class="start-btn" id="startBtn">のぼりはじめる</button>
+        <a href="https://x.com/019_nepnep/status/2110302005814268345" target="_blank" rel="noopener" class="result-link">お祝いメッセージを募集中！→</a>
+        <div class="rules">
+          【ご注意】<br>
+          本コンテンツは<br>
+          <b>ファンによる自主制作コンテンツ</b>であり、<br>
+          youmenosay様および陽葵優叶様の<br>
+          公式コンテンツではありません。<br>
+          youmenosay様や陽葵優叶様への<br>
+          お問い合わせはご遠慮ください。
+        </div>
+        <div class="version-tag">v1.00.00</div>
+      </div>
+    </section>
+
+    <!-- PLAY SCREEN -->
+    <section id="screen-play" class="screen hidden">
+      <div id="canvasWrap">
+        <canvas id="gameCanvas"></canvas>
+        <div class="hud">
+          <div class="hud-top">
+            <div class="stat-box">
+              <div class="stat-label">標高</div>
+              <div class="stat-value" id="altValue">0 m</div>
+            </div>
+            <div class="hud-right">
+              <div class="stat-box">
+                <div class="stat-label">LIFE</div>
+                <div class="lives" id="livesBox">
+                </div>
+              </div>
+              <button id="pauseBtn" type="button" aria-label="一時停止"><i></i><i></i></button>
+            </div>
+          </div>
+          <div class="progress-wrap">
+            <div class="stat-label" style="color:#dbe3f2;">GOAL 3776m</div>
+            <div class="progress-track">
+              <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <div class="progress-text" id="progressText">現在地 0m / 3776m</div>
+          </div>
+          <div class="hint-controls">← → / ドラッグで移動</div>
+          <button id="boostBtn"><span>加速</span></button>
+        </div>
+        <div class="flash-overlay" id="flashOverlay"></div>
+        <div class="pause-overlay hidden" id="pauseOverlay">
+          <div class="pause-title">ポーズ中</div>
+          <button class="pause-resume-btn" id="resumeBtn" type="button">ゲームに戻る</button>
+          <button class="pause-ending-btn hidden" id="endingBtn" type="button">エンディングを見る</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESULT SCREEN -->
+    <section id="screen-result" class="screen hidden">
+      <div class="unlock-toast" id="unlockToast" role="status" aria-live="polite">
+        生きむずモードが解放されました！<br>タイトル画面に戻って遊んでみてください！</div>
+      <div class="result-tag" id="resultTag">RESULT</div>
+      <h2 class="result-title" id="resultTitle">お疲れさまでした</h2>
+
+      <!-- ゲームオーバー時のみ表示する吹き出し演出(本文は GAME_OVER_MESSAGES から入る)。 -->
+      <div class="gameover-scene hidden" id="gameoverScene">
+        <div class="speech-bubble" id="gameoverBubble">
+          <!-- 初期のpath。実際の形は initSpeechBubbleShape() が実寸に合わせて描き直す。 -->
+          <svg class="speech-bubble-bg" viewBox="0 0 200 100" preserveAspectRatio="none" aria-hidden="true">
+            <path
+              d="M42,2 H158 A40,40 0 0 1 198,42 A40,40 0 0 1 158,82 H110 L100,96 L90,82 H42 A40,40 0 0 1 2,42 A40,40 0 0 1 42,2 Z"
+              fill="#fbf6ea" />
+          </svg>
+          <span class="speech-bubble-text" id="gameoverBubbleText">ここにメッセージが入ります</span>
+        </div>
+        <svg class="gameover-character" viewBox="0 0 60 80" aria-hidden="true">
+          <ellipse cx="30" cy="65.5" rx="14" ry="4.5" fill="rgba(0,0,0,0.3)" />
+          <polygon points="30,34 15,66 45,66" fill="#E5332F" />
+          <circle cx="30" cy="22" r="11" fill="#f3d3ae" />
+          <path d="M19 22 A11 11 0 0 1 41 22 Z" fill="#EF7F31" />
+        </svg>
+      </div>
+
+      <div class="result-cards">
+        <div class="result-card">
+          <div class="k">到達標高</div>
+          <div class="v" id="resultAlt">0 m</div>
+        </div>
+        <div class="result-card">
+          <div class="k">タイム</div>
+          <div class="v" id="resultTime">0:00</div>
+        </div>
+      </div>
+      <a href="#" target="_blank" rel="noopener" class="result-link hidden" id="summitLink">登頂したぺんざむを見に行く！→</a>
+      <div class="result-actions">
+        <button class="btn-share" id="shareBtn">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="#fff">
+            <path
+              d="M18.9 2H22l-7.6 8.7L23.3 22h-7l-5.5-7.2L4.5 22H1.4l8.2-9.4L0.9 2h7.2l5 6.6L18.9 2Zm-1.2 18h1.7L6.4 4H4.6l13.1 16Z" />
+          </svg>
+          Xでシェアする
+        </button>
+        <button class="btn-retry" id="retryBtn">タイトル画面に戻る</button>
+      </div>
+    </section>
+
+  </div>
+
+  <script>
+    (function () {
+      "use strict";
+
+      /* ============ SELECTION / DRAG GUARD ============ */
+      document.addEventListener('selectstart', e => e.preventDefault());
+      document.addEventListener('dragstart', e => e.preventDefault());
+
+      /* ============ ZOOM GUARD ============ */
+      /* iOS Safariはviewportのuser-scalable=noを無視するため、ピンチ拡大をJSで止める(ダブルタップ拡大はCSSのtouch-action: manipulationで防ぐ)。 */
+      ['gesturestart', 'gesturechange', 'gestureend'].forEach(type => {
+        document.addEventListener(type, e => e.preventDefault()); /* iOS Safari独自のピンチイベント */
+      });
+
+      /* ASSET CONFIG ― 差し替え画像の設定(ファイルが無い場合は自動でプロシージャル描画にフォールバック)。 */
+      const IMG_DIR = 'assets/images/';
+
+      const ASSET_CONFIG = {
+        titleLogo: {
+          src: IMG_DIR + 'title-logo.png',
+        },
+
+        player: {
+          walkLeftSrc: IMG_DIR + 'player-walk-left.png',   /* 左足を上げている画像 */
+          walkRightSrc: IMG_DIR + 'player-walk-right.png', /* 右足を上げている画像 */
+          drawWidth: 34,        /* 描画時の幅(論理ピクセル) */
+          drawHeight: 40,       /* 描画時の高さ(論理ピクセル) */
+        },
+
+        backgrounds: {
+          forest: { src: IMG_DIR + 'bg-forest.png' },
+          rockyDay: { src: IMG_DIR + 'bg-rocky-day.png' },
+          rockyDay2: { src: IMG_DIR + 'bg-rocky-day2.png' },
+          rockyCloud: { src: IMG_DIR + 'bg-rocky-cloud.png' },
+        },
+
+        summitFuji: {
+          src: IMG_DIR + 'summit-fuji.png',
+
+          /* ▼ 山頂シーン(登頂後)の富士山。画像の下端が画面下端に揃う位置が基準(ずれ0)。 */
+          widthRatio: 1.9,  /* 大きさ: 画面幅に対する表示幅の割合(縦は画像の縦横比で自動。画像が無い仮の山にも同じ比率で効く) */
+          offsetX: 0,       /* 位置: 左右のずれ(論理px。+で右、-で左) */
+          offsetY: 170,      /* 位置: 上下のずれ(論理px。+で下、-で上。+にすると下側が画面外に見切れる) */
+        },
+
+        /* 推奨: 正方形に近い透過PNG/SVG。岩の回転角に合わせて回転して描画される。 */
+        rock: {
+          src: IMG_DIR + 'rock.png',
+        },
+
+        /* 推奨: 横長の透過PNG/SVG。プレイ中の雲と山頂の雲海の両方で使われる。 */
+        cloud: {
+          src: IMG_DIR + 'cloud.png',
+        },
+
+        /* 推奨: 正方形に近い透過PNG。ゲームオーバー時の吹き出し演出のSVGキャラクターと差し替わる。 */
+        resultCharacter: {
+          src: IMG_DIR + 'result-character.png',
+        },
+
+        /* 推奨: 正方形に近い透過PNG。山頂の富士山の上に立つ専用画像(高さは縦横比から自動計算)。 */
+        summitCharacter: {
+          src: IMG_DIR + 'summit-character.png',
+          drawWidth: 32, /* 描画時の幅(論理ピクセル)。高さは画像の縦横比から自動計算 */
+        },
+      };
+
+      /* 山頂シーンの富士山(画像が無い場合の仮描画=台形)の形。位置と横幅は ASSET_CONFIG.summitFuji(widthRatio/offsetX/offsetY)に従う。 */
+      const FUJI_FALLBACK = {
+        heightRatio: 0.68,     /* 山の高さ(底辺の幅に対する比率) */
+        topWidthRatio: 0.03,   /* 山頂の平らな部分の幅(底辺の幅に対する比率) */
+        snowHeightRatio: 0.2,  /* 雪の高さ(山の高さに対する比率。山頂から下へ) */
+        colorBody: '#151a2c',  /* 山の色 */
+        colorSnow: '#f3ede0',  /* 雪の色 */
+      };
+
+      /* ============ CONFIG ============ */
+      /* Xシェア本文に含めるゲームURL。 */
+      const GAME_URL = window.location.href || '';
+      const SUMMIT_URL = 'https://vt.tiktok.com/ZSbPR3QS1/';
+      /* 論理サイズ(縦16:横9)。背景タイルは幅LOGICAL_Wに合わせ、高さは画像の縦横比で決まる。 */
+      const LOGICAL_W = 480, LOGICAL_H = LOGICAL_W * 16 / 9;
+      const TARGET_ALT = 3776;
+      const MAX_LIVES = 3;
+      const BASE_ALT_RATE = 46;      /* m/s ― 標高が上がるベース速度(加速ボタンの有無に関わらず変更しない) */
+      const ALT_BOOST_MULT = 1.7;    /* 加速ボタン使用時の標高上昇倍率(据え置き) */
+
+      /* 背景スクロールと岩の落下速度だけに効く難易度パラメータ(標高の上昇速度には影響しない)。 */
+      const BASE_SCROLL = 195;         /* px/s ― 背景スクロール/岩落下の基準速度 */
+      const SCROLL_BOOST_MULT = 1.9;   /* 加速ボタン使用時のスクロール/岩速度の倍率 */
+      /* 標高に応じてBASE_SCROLLを 0m→山頂 で MIN→MAX 倍へ線形に速くする(加速倍率とは乗算で併用)。 */
+      const SCROLL_ALT_SCALE_MIN = 1.0;  /* 標高0m時点でのスクロール基本速度倍率 */
+      const SCROLL_ALT_SCALE_MAX = 1.6;  /* 山頂(TARGET_ALT)到達時点でのスクロール基本速度倍率 */
+      const ROCK_DIAGONAL_FACTOR = 55;    /* px/s ― 下限より速い岩に与える横方向の速度係数(相対速度に比例) */
+      const ROAD_WIDTH = LOGICAL_W * 0.5;
+      const ROAD_LEFT = (LOGICAL_W - ROAD_WIDTH) / 2;
+      const ROAD_RIGHT = ROAD_LEFT + ROAD_WIDTH;
+      const PLAYER_Y = LOGICAL_H * 0.72;
+
+      /* 移動範囲の左右端に張るロープ(drawRopes参照)。postSpacing=杭の間隔, sag=外側への膨らみ, twistDash=ねじれ模様の破線(いずれもpx)。 */
+      const ROPE_CONFIG = {
+        postSpacing: 110, postRadius: 4.5, sag: 3, width: 3.5,
+        twistDash: [3, 4],
+        colorBase: '#d8b983', colorTwist: '#8b6a3a', colorOutline: 'rgba(40,25,10,0.55)',
+        colorPost: '#7a5632', colorPostTop: '#a67c4b',
+      };
+      const PLAYER_R = 14;
+      const KEYBOARD_MOVE_SPEED = 337.5; /* px/s ― キーボードでの左右移動速度(従来の「16msごとに5.4px」と同じ速さ) */
+      const ROCK_STILL_SPEED_MUL = 1.0001; /* 岩の速度倍率がこの値以下なら「止まって見える岩(最低速度)」 */
+      const WALK_PHASE_RATE = 7, WALK_PHASE_RATE_FAST = 10; /* 歩行アニメの進む速さ(通常 / 加速中・退場中) */
+      const SUMMIT_HORIZON = 0.62; /* 山頂シーンで空が占める高さ(画面高さに対する割合)。太陽はここから昇る */
+      const ROCK_SPIN_FACTOR = 0.016; /* 落下スピード(px/s)に対する回転速度の比例係数 */
+      /* --- 岩の見た目(createRock) --- */
+      const ROCK_X_MARGIN = 20;        /* px ― 道の左右端から岩の中心を離す余白 */
+      const ROCK_RADIUS_MIN = 14;      /* px ― 岩の半径の最小値 */
+      const ROCK_RADIUS_RANGE = 14;    /* px ― 半径に加わるランダム幅(最大=MIN+RANGE) */
+      const ROCK_SPIKES_MIN = 7;       /* トゲ(頂点)数の最小値 */
+      const ROCK_SPIKES_RANGE = 4;     /* トゲ数に加わるランダム幅(7〜10角) */
+      const ROCK_ANGLE_JITTER = 0.45;  /* 頂点の角度のばらつき(1頂点ぶんの角度に対する比率) */
+      const ROCK_DENT_MIN = 0.7, ROCK_DENT_RANGE = 0.16;  /* へこみ頂点の半径倍率 */
+      const ROCK_BUMP_MIN = 0.94, ROCK_BUMP_RANGE = 0.26;  /* 出っ張り頂点の半径倍率 */
+
+      /* 雲(画面オーバーレイ)の見た目・出現パラメータ。岩やプレイヤーより手前に半透明で重ねて描く。 */
+      const CLOUD_CONFIG = {
+        baseOpacity: 0.6,          /* 雲1つあたりの基本の不透明度(0〜1) */
+        blurPx: 5,                  /* ふわふわ感を出すためのぼかし量(px)。ctx.filterで使用 */
+        cloudMinW: 140, cloudMaxW: 240, /* 雲全体のおおよその横幅(CLOUD_EMOJI_TEMPLATEをこの幅に合わせて拡大縮小する) */
+        puffJitter: 0.16,            /* 各パフの位置・半径にかけるランダムなばらつき(±この割合) */
+        /* 雲の落下速度=スクロール速度×この係数(1.0で背景と同速=地形に固定されて見える)。 */
+        verticalSpeedFactor: 1.0,
+        driftAmp: 10,                /* 横方向にふわふわ揺れる振幅(px)。小さめにして「固定感」を保つ */
+        driftFreqHz: 0.28,           /* 横方向の揺れの速さ(だいたいのHz) */
+        spawnIntervalMinMs: 1000,    /* 雲が最も出やすい時(標高が高い)の生成間隔[最小] */
+        spawnIntervalMaxMs: 2800,    /* 雲が出始めた頃(標高が低い)の生成間隔[最大] */
+        maxCloudsOnScreen: 6,        /* 画面内に同時に存在できる雲の最大数 */
+      };
+
+      /* 「☁️」を参考にした雲の形。雲の中心を原点、全体の幅を1.0とした比率で、円(パフ)の位置(dx,dy)と半径(r)を指定する。 */
+      const CLOUD_EMOJI_TEMPLATE = [
+        { dx: -0.32, dy: 0.10, r: 0.26 }, /* bottomLeft   : 左下の土台 */
+        { dx: -0.04, dy: 0.14, r: 0.32 }, /* bottomCenter : 中央下、最大の土台(雲の幅の要) */
+        { dx: 0.30, dy: 0.09, r: 0.25 }, /* bottomRight  : 右下の土台 */
+        { dx: -0.18, dy: -0.15, r: 0.24 }, /* topLeft      : 絵文字らしい大きな左こぶ */
+        { dx: 0.11, dy: -0.10, r: 0.19 }, /* topRight     : やや小さい右こぶ */
+        { dx: -0.42, dy: 0.02, r: 0.14 }, /* tinyLeft     : 左端の小さな盛り上がり */
+      ];
+
+
+      const STAGES = [
+        { key: 'forest', from: 0, to: 800 },
+        { key: 'rockyDay', from: 800, to: 2000 },
+        { key: 'rockyDay2', from: 2000, to: 3000 },
+        { key: 'rockyCloud', from: 3000, to: TARGET_ALT }
+      ];
+      const STAGE_TRANSITION_RANGE = 260; /* m: 背景がクロスフェードする幅 */
+
+      /* ステージ(STAGESのkey)ごとの難易度。spawnIntervalMs=岩の生成間隔(小さいほど多い), fastRange=速度倍率の上乗せ最大値。境界ではgetStageBlend()の比率で補間する。 */
+      const STAGE_DIFFICULTY = {
+        forest: { spawnIntervalMs: 1300, fastRange: 0.35 }, /* 森林: 岩は少なめ・遅め */
+        rockyDay: { spawnIntervalMs: 950, fastRange: 0.70 }, /* 昼の岩場: 標準 */
+        rockyDay2: { spawnIntervalMs: 720, fastRange: 1.05 }, /* 昼の岩場2: やや多め・速め */
+        rockyCloud: { spawnIntervalMs: 480, fastRange: 1.70 }, /* 雲の岩場(ゴール手前): 最も多く・速い */
+      };
+      const SPAWN_BOOST_INTERVAL_MULT = 0.68; /* 加速ボタン使用時、岩の生成間隔をさらに短くする倍率 */
+      const SPAWN_INTERVAL_MIN_MS = 230;      /* 岩の生成間隔の下限(これ以上は詰めない) */
+
+      /* モード別設定。rockCountMult=岩の数の倍率(生成間隔をこの値で割る), summitScene=登頂後の演出('sunrise'|'fireworks')。 */
+      const GAME_MODES = {
+        normal: { label: '普通モード', rockCountMult: 1, summitScene: 'sunrise' },
+        hard: { label: '生きむずモード', rockCountMult: 2, summitScene: 'fireworks' },
+      };
+      const DEFAULT_MODE = 'normal';
+
+      /* 被弾時の画面の赤い点滅(キャラクターの点滅とは独立)。「点灯→消灯」を HIT_FLASH_BLINKS 回繰り返す。 */
+      const HIT_FLASH_BLINKS = 2;     /* 点滅回数 */
+      const HIT_FLASH_ON_MS = 70;     /* 1回あたりの点灯時間 */
+      const HIT_FLASH_OFF_MS = 70;    /* 1回あたりの消灯時間 */
+      const HIT_FLASH_ALPHA = 0.5;    /* 点灯時の赤の不透明度 */
+      const INVINCIBLE_BLINK_MS = 90;      /* 無敵中の点滅の切り替え間隔(ms) */
+      const INVINCIBLE_MS = 1100;          /* 被弾後の無敵時間(ms)。この間キャラクターが点滅する */
+
+      /* UI/演出まわりの設定 */
+      const UNLOCK_TOAST_MS = 5000;   /* 生きむずモード解放トーストの表示時間(ms) */
+      /* 吹き出し左右端の丸み。1=完全な半円、小さいほど平らになる。 */
+      const BUBBLE_END_ROUNDNESS = 1;
+      /* 吹き出しの寸法比率(幅W・高さHに対する割合)。しっぽは下辺中央から伸びる。 */
+      const BUBBLE_BODY = { left: 0.01, right: 0.99, top: 0.02, bottom: 0.82 };
+      const BUBBLE_TAIL = { baseLeft: 0.45, baseRight: 0.55, tipX: 0.5, tipY: 0.96 };
+
+      /* 複数の場所で使うキャラクターの配色(HTML内のSVGキャラクターと共通)。 */
+      const COLORS = {
+        PLAYER_JACKET: '#E5332F', /* 上着 */
+        PLAYER_DARK: '#572d28', /* 足などの濃い部分 */
+        PLAYER_FACE: '#f3d3ae', /* 顔 */
+        PLAYER_HAT: '#EF7F31', /* 帽子 */
+      };
+      /* 登頂済みフラグの保存先(sessionStorage)。タブを閉じると破棄される。 */
+      const SUMMIT_CLEARED_STORAGE_KEY = 'penzamu_fuji_summit_cleared';
+      /* モードごとの登頂済みフラグの保存先(sessionStorage)。キーは このプレフィックス + モード名。 */
+      const MODE_CLEARED_STORAGE_PREFIX = 'penzamu_fuji_mode_cleared_';
+
+      /* ゲームオーバー台詞。力尽きた時の標高が属するステージ(STAGESのkey)ごとに、吹き出しへ表示する。 */
+      const GAME_OVER_MESSAGES = {
+        forest: 'ひなたぼっこできたからぽかぽか〜',
+        rockyDay: 'また挑戦するけん大丈夫！',
+        rockyDay2: '山頂まであと半分もないんやって！すごくない！？',
+        rockyCloud: '鼻歌うたっとったら息切れしちゃった！',
+      };
+      const GAME_OVER_MESSAGE_FALLBACK = '力尽きてしまった…もう一度挑戦しよう!';
+
+      /* 山頂到達後の演出タイミング(秒) */
+      const SUMMIT_FADEOUT = 1.4;   /* プレイ画面→黒(この間にキャラクターが画面外へ進む) */
+      const SUMMIT_BLACK_HOLD = 0.3; /* 黒画面を維持 */
+      const SUMMIT_FADEIN = 1.0;    /* 黒→日の出シーン */
+      const SUMMIT_SCENE_HOLD = 5.0; /* 登頂後のシーン(日の出・夜の花火 共通)を、フェードイン完了後に見せる時間(秒) */
+      /* 日の出の上昇にかける時間(秒)。昇りきった後はそのまま見せ続ける。 */
+      const SUNRISE_RISE_DURATION = 3.2;
+      const SUMMIT_T1 = SUMMIT_FADEOUT;
+      const SUMMIT_T2 = SUMMIT_T1 + SUMMIT_BLACK_HOLD;
+      const SUMMIT_T3 = SUMMIT_T2 + SUMMIT_FADEIN;
+      const SUMMIT_T4 = SUMMIT_T3 + SUMMIT_SCENE_HOLD;
+      /* 山頂演出のフェーズ: EXIT(黒へフェードアウト) → BLACK(暗転) → FADEIN(シーンへフェードイン) → HOLD(表示)。 */
+      const SUMMIT_PHASE = { EXIT: 'exit', BLACK: 'black', FADEIN: 'fadein', HOLD: 'hold' };
+
+      const SUMMIT_EXIT_SPEED = (PLAYER_Y + 80) / SUMMIT_FADEOUT;
+
+      const TILE_H = 700; /* プロシージャル背景タイルの高さ(画像タイルの高さは画像の縦横比で決まる) */
+
+      /* ステージ別タイル背景の配色。'default' は上記以外(雲ステージ)で使う。雲は背景に焼かず drawClouds() で描く。 */
+      const TILE_PALETTES = {
+        forest: { bgGradStops: ['#3f6b45', '#2a4d31'], roadColor: '#8a7350', roadEdge: '#6d5a3e', decoColor: '#204028', decoColor2: '#2c5636', starMode: false }, /* 標高0〜800m */
+        rockyDay: { bgGradStops: ['#a89a80', '#8a7c64'], roadColor: '#c2b49a', roadEdge: '#9c8f76', decoColor: '#6e6250', decoColor2: '#84765f', starMode: false }, /* 標高800〜2000m */
+        rockyDay2: { bgGradStops: ['#232a3d', '#161b29'], roadColor: '#4a5063', roadEdge: '#333952', decoColor: '#333a52', decoColor2: '#40485f', starMode: true }, /* 標高2000〜3000m */
+        default: { bgGradStops: ['#262b45', '#181c2e'], roadColor: '#4b5170', roadEdge: '#323752', decoColor: '#3a4160', decoColor2: '#454d6e', starMode: true },
+      };
+
+      /* ゲーム進行状態(IDLE=待機 / PLAY / SUMMIT=登頂演出 / RESULT)。文字列は直書きせずこの定数を使う。 */
+      const STATE = { IDLE: 'idle', PLAY: 'play', SUMMIT: 'summit', RESULT: 'result' };
+
+      /* 星は位置・瞬きを固定し、毎フレーム作り直さない。 */
+      const FIREWORKS_STARS = (() => {
+        const rng = makeRng(20240801);
+        const stars = [];
+        for (let i = 0; i < 110; i++) {
+          stars.push({ x: rng() * LOGICAL_W, y: rng() * LOGICAL_H * 0.7, r: 0.4 + rng() * 1.1, phase: rng() * Math.PI * 2, speed: 1 + rng() * 2.5 });
+        }
+        return stars;
+      })();
+      const FIREWORKS_MAX_SPARKS = 900; /* 火花の総数の上限(端末の負荷対策) */
+
+      const _imageCache = {};
+
+      /* getLoadedImage と同様に画像を読み込むが、読み込み中(pending)と失敗(failed)を区別して {status, image} で返す。 */
+      function getImageState(cacheKey, src) {
+        if (!src) return { status: 'none', image: null };
+        let img = _imageCache[cacheKey];
+        if (!img) {
+          img = new Image();
+          img.src = src;
+          _imageCache[cacheKey] = img;
+        }
+        if (!img.complete) return { status: 'pending', image: null };
+        return img.naturalWidth > 0
+          ? { status: 'ready', image: img }
+          : { status: 'failed', image: null };
+      }
+
+      /* 読み込み完了済みの画像を返す。未指定・読み込み中・失敗の場合は null(=呼び出し側はプロシージャル描画にフォールバック)。 */
+      function getLoadedImage(cacheKey, src) {
+        const imgState = getImageState(cacheKey, src);
+        return imgState.status === 'ready' ? imgState.image : null;
+      }
+
+      /* 画像が読み込めた場合のみ、selector の要素を <img>(opts.wrapperClass があればラッパー付き)へ差し替える。 */
+      function swapElementWithImage(selector, src, opts) {
+        if (!src) return Promise.resolve();
+        const el = document.querySelector(selector);
+        if (!el) return Promise.resolve();
+        /* 差し替えの完了(または失敗)で resolve する。起動時に、スタート画面を出す前に待つために使う。 */
+        return new Promise(resolve => {
+          const probe = new Image();
+          probe.onload = () => {
+            const img = document.createElement('img');
+            img.src = src;
+            img.alt = opts.alt;
+            img.className = opts.className;
+            if (opts.wrapperClass) {
+              const wrap = document.createElement('span');
+              wrap.className = opts.wrapperClass;
+              wrap.appendChild(img);
+              el.replaceWith(wrap);
+            } else {
+              el.replaceWith(img);
+            }
+            resolve();
+          };
+          probe.onerror = () => {
+            if (typeof opts.onError === 'function') {
+              opts.onError();
+            }
+            resolve();
+          };
+          probe.src = src;
+        });
+      }
+
+      function preloadImage(cacheKey, src) {
+        return new Promise(resolve => {
+          if (!src) return resolve(false);
+          const cached = _imageCache[cacheKey];
+          if (cached && cached.complete && cached.naturalWidth > 0) {
+            return resolve(true);
+          }
+          const img = new Image();
+          img.onload = () => resolve(true);
+          img.onerror = () => resolve(false);
+          img.src = src;
+          _imageCache[cacheKey] = img;
+        });
+      }
+
+      async function preloadStartAssets() {
+        const assets = [
+          ['titleLogo', ASSET_CONFIG.titleLogo.src],
+          ['playerWalkLeft', ASSET_CONFIG.player.walkLeftSrc],
+          ['playerWalkRight', ASSET_CONFIG.player.walkRightSrc],
+          ['summitCharacter', ASSET_CONFIG.summitCharacter.src],
+          ['summitFuji', ASSET_CONFIG.summitFuji.src],
+          ['cloud', ASSET_CONFIG.cloud.src],
+          ['rock', ASSET_CONFIG.rock.src],
+          ['resultCharacter', ASSET_CONFIG.resultCharacter.src],
+          ...Object.entries(ASSET_CONFIG.backgrounds).map(([key, bg]) => ['bg_' + key, bg.src]),
+        ];
+
+        /* 全画像を並列に読み込み、すべての読み込み(成功・失敗とも)が終わるまで待つ。 */
+        await Promise.all(assets.map(([cacheKey, src]) => preloadImage(cacheKey, src)));
+      }
+
+      /* title-logo 画像が読み込めた場合のみ、テキストロゴを画像に差し替える(起動時に1回呼ぶ)。 */
+      function initTitleLogoAsset() {
+        return swapElementWithImage('.title-logo', ASSET_CONFIG.titleLogo.src, {
+          alt: 'ぺんざむの！富士山のぼれるかな？', className: 'title-logo-img',
+          onError: () => {
+            document.querySelector('.title-logo').style.visibility = 'visible';
+          }
+        });
+      }
+
+      /* result-character 画像が読み込めた場合のみ、リザルトのSVGキャラクターを画像に差し替える(起動時に1回呼ぶ)。 */
+      function initResultCharacterAsset() {
+        return swapElementWithImage('.gameover-character', ASSET_CONFIG.resultCharacter.src, {
+          alt: 'キャラクター', className: 'gameover-character',
+          /* PNGには影が無いので、足元に影を付けるラッパーで包んで差し替える */
+          wrapperClass: 'gameover-character-wrap'
+        });
+      }
+
+      /* 吹き出しのpathを実寸(px)で描き直して左右端を歪みのない半円にする(サイズ変化には ResizeObserver で追従)。 */
+      function updateSpeechBubbleShape() {
+        const bubble = ui.gameoverBubble;
+        if (!bubble) return;
+        const svg = bubble.querySelector('.speech-bubble-bg');
+        const path = svg && svg.querySelector('path');
+        const W = bubble.offsetWidth, H = bubble.offsetHeight;
+        if (!path || !W || !H) return; /* 非表示中(サイズ0)は何もしない */
+        const x0 = W * BUBBLE_BODY.left, x1 = W * BUBBLE_BODY.right, yT = H * BUBBLE_BODY.top, yB = H * BUBBLE_BODY.bottom;
+        const tipX = W * BUBBLE_TAIL.tipX, tipY = H * BUBBLE_TAIL.tipY, tailL = W * BUBBLE_TAIL.baseLeft, tailR = W * BUBBLE_TAIL.baseRight;
+        const r = Math.min((yB - yT) / 2 * BUBBLE_END_ROUNDNESS, (x1 - x0) / 2);
+        svg.setAttribute('viewBox', '0 0 ' + W + ' ' + H);
+        path.setAttribute('d',
+          'M' + (x0 + r) + ',' + yT +
+          ' H' + (x1 - r) +
+          ' A' + r + ',' + r + ' 0 0 1 ' + x1 + ',' + (yT + r) +
+          ' V' + (yB - r) +
+          ' A' + r + ',' + r + ' 0 0 1 ' + (x1 - r) + ',' + yB +
+          ' H' + tailR + ' L' + tipX + ',' + tipY + ' L' + tailL + ',' + yB +
+          ' H' + (x0 + r) +
+          ' A' + r + ',' + r + ' 0 0 1 ' + x0 + ',' + (yB - r) +
+          ' V' + (yT + r) +
+          ' A' + r + ',' + r + ' 0 0 1 ' + (x0 + r) + ',' + yT + ' Z');
+      }
+      function initSpeechBubbleShape() {
+        const bubble = ui.gameoverBubble;
+        if (!bubble) return;
+        if (typeof ResizeObserver !== 'undefined') {
+          new ResizeObserver(updateSpeechBubbleShape).observe(bubble);
+        }
+        window.addEventListener('resize', updateSpeechBubbleShape);
+        updateSpeechBubbleShape();
+      }
+
+      /* 標高に応じたスクロール基本速度の倍率(0mでSCALE_MIN、山頂でSCALE_MAXに達し、以降は頭打ち)。 */
+      function getScrollAltMultiplier(alt) {
+        const t = Math.min(1, Math.max(0, alt / TARGET_ALT));
+        return SCROLL_ALT_SCALE_MIN + (SCROLL_ALT_SCALE_MAX - SCROLL_ALT_SCALE_MIN) * t;
+      }
+
+      function getSummitPhase(timer) {
+        if (timer < SUMMIT_T1) return SUMMIT_PHASE.EXIT;
+        if (timer < SUMMIT_T2) return SUMMIT_PHASE.BLACK;
+        if (timer < SUMMIT_T3) return SUMMIT_PHASE.FADEIN;
+        return SUMMIT_PHASE.HOLD;
+      }
+
+      function isFireworksScene() { return GAME_MODES[game.selectedMode].summitScene === 'fireworks'; }
+      function getSummitEndTime() { return SUMMIT_T4; } /* 日の出・花火とも SUMMIT_SCENE_HOLD 秒 */
+
+      /* ============ SEEDED RNG (stable tile art) ============ */
+      function makeRng(seed) {
+        let s = seed >>> 0;
+        return function () {
+          s ^= s << 13; s >>>= 0;
+          s ^= s >> 17;
+          s ^= s << 5; s >>>= 0;
+          return (s >>> 0) / 4294967296;
+        };
+      }
+
+      /* ============ DOM ============ */
+      /* 使用するHTML要素(idと同名のプロパティに入れる。canvas のみ id が gameCanvas) */
+      const ui = {
+        screens: {
+          start: document.getElementById('screen-start'),
+          play: document.getElementById('screen-play'),
+          result: document.getElementById('screen-result'),
+        },
+        canvas: document.getElementById('gameCanvas'),
+      };
+      ['canvasWrap', 'altValue', 'progressFill', 'progressText', 'livesBox', 'boostBtn', 'flashOverlay', 'pauseBtn', 'pauseOverlay',
+        'gameoverBubble', 'unlockToast', 'resumeBtn', 'startBtn', 'retryBtn', 'endingBtn', 'modeSelect', 'resultTag', 'resultTitle', 'resultAlt', 'resultTime', 'summitLink', 'shareBtn', 'gameoverScene', 'gameoverBubbleText'
+      ].forEach(id => { ui[id] = document.getElementById(id); });
+      const ctx = ui.canvas.getContext('2d');
+
+      function showScreen(name) {
+        Object.values(ui.screens).forEach(s => s.classList.add('hidden'));
+        ui.screens[name].classList.remove('hidden');
+      }
+
+      /* ============ CANVAS SETUP ============ */
+      function resizeCanvas() {
+        const dpr = Math.min(window.devicePixelRatio || 1, 2.5);
+        ui.canvas.width = Math.round(LOGICAL_W * dpr);
+        ui.canvas.height = Math.round(LOGICAL_H * dpr);
+        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      }
+      window.addEventListener('resize', () => {
+        resizeCanvas();
+        /* canvas のサイズ再設定で描画が消えるため、毎フレーム描画が止まるポーズ中はここで1回描き直す。 */
+        if (game.paused) draw();
+      });
+
+      /* ============ TILE BACKGROUND GENERATION ============ */
+      const tileCache = {};
+      const proceduralTileCache = {}; /* 画像読み込み待ち(pending)の間に使い回すプロシージャル生成タイル */
+
+      /* ステージ別の縦ループ背景タイルを返す。画像が設定されていればそれを使い、読み込み中(pending)の間は確定キャッシュせず仮のプロシージャル版を使って次回再判定する。 */
+      function buildTile(stageKey) {
+        if (tileCache[stageKey]) return tileCache[stageKey];
+
+        const bgConfig = ASSET_CONFIG.backgrounds[stageKey];
+        const imgState = getImageState('bg_' + stageKey, bgConfig && bgConfig.src);
+        if (imgState.status === 'ready') {
+          tileCache[stageKey] = imgState.image; /* 確定: 用意された画像を今後も使う */
+          return imgState.image;
+        }
+
+        /* pending中の一時利用分も使い回せるよう、専用キャッシュに保持する。 */
+        let proc = proceduralTileCache[stageKey];
+        if (!proc) {
+          proc = buildProceduralTile(stageKey);
+          proceduralTileCache[stageKey] = proc;
+        }
+        if (imgState.status !== 'pending') {
+          /* 失敗/未設定なら今後も画像に切り替わらないので、確定キャッシュする。 */
+          tileCache[stageKey] = proc;
+        }
+        return proc;
+      }
+
+      /* ゲーム開始前に全ステージの背景タイルと描画高さ(幅LOGICAL_Wでの縦横比から算出し、継ぎ目のため整数化)を確定する。プレイ中は再計算しない。 */
+      const resolvedBgTiles = {}; /* ステージキー → { tile: 描画元(画像またはcanvas), h: 描画高さ(論理px) } */
+      function resolveBackgroundTiles() {
+        STAGES.forEach(s => {
+          const tile = buildTile(s.key);
+          const w = tile.naturalWidth || tile.width;  /* 画像はnatural*、canvasはwidth/height */
+          const hgt = tile.naturalHeight || tile.height;
+          resolvedBgTiles[s.key] = { tile, h: Math.round(LOGICAL_W * hgt / w) };
+        });
+      }
+
+      /* 画像未設置時の仮の背景タイルを生成する。乱数を順に消費するため、描画順を変えると模様が変わる。 */
+      function buildProceduralTile(stageKey) {
+        const c = document.createElement('canvas');
+        c.width = LOGICAL_W; c.height = TILE_H;
+        const tctx = c.getContext('2d');
+        const rng = makeRng(hashStr(stageKey) + 99);
+        const palette = TILE_PALETTES[stageKey] || TILE_PALETTES.default;
+
+        paintTileBackground(tctx, palette);
+        if (palette.starMode) paintTileStars(tctx, rng);
+        paintTileDecorations(tctx, rng, stageKey, palette);
+        paintTileRoad(tctx, palette);
+        paintTileGravel(tctx, rng);
+
+        return c;
+      }
+
+      function paintTileBackground(tctx, palette) {
+        const g = tctx.createLinearGradient(0, 0, 0, TILE_H);
+        g.addColorStop(0, palette.bgGradStops[0]);
+        g.addColorStop(1, palette.bgGradStops[1]);
+        tctx.fillStyle = g;
+        tctx.fillRect(0, 0, LOGICAL_W, TILE_H);
+      }
+
+      /* 星(夜間ステージのみ)。道の上には出さない。 */
+      function paintTileStars(tctx, rng) {
+        tctx.fillStyle = 'rgba(255,255,255,0.75)';
+        for (let i = 0; i < 60; i++) {
+          const x = rng() * LOGICAL_W;
+          const y = rng() * TILE_H;
+          if (x > ROAD_LEFT - 10 && x < ROAD_RIGHT + 10) continue; /* 道の上は避ける */
+          const r = rng() * 1.4 + 0.3;
+          tctx.globalAlpha = 0.4 + rng() * 0.6;
+          tctx.beginPath(); tctx.arc(x, y, r, 0, Math.PI * 2); tctx.fill();
+        }
+        tctx.globalAlpha = 1;
+      }
+
+      function paintTileDecorations(tctx, rng, stageKey, palette) {
+        for (let i = 0; i < 26; i++) {
+          const side = rng() < 0.5 ? 'L' : 'R';
+          const y = rng() * TILE_H;
+          const baseX = side === 'L' ? rng() * (ROAD_LEFT - 16) : ROAD_RIGHT + 16 + rng() * (LOGICAL_W - ROAD_RIGHT - 16);
+          const size = 10 + rng() * 22;
+          tctx.fillStyle = rng() < 0.5 ? palette.decoColor : palette.decoColor2;
+          if (stageKey === 'forest') {
+            tctx.beginPath();
+            tctx.moveTo(baseX, y - size);
+            tctx.lineTo(baseX - size * 0.55, y + size * 0.5);
+            tctx.lineTo(baseX + size * 0.55, y + size * 0.5);
+            tctx.closePath(); tctx.fill();
+            tctx.fillStyle = '#5b4127';
+            tctx.fillRect(baseX - 2, y + size * 0.5, 4, size * 0.35);
+          } else {
+            tctx.beginPath();
+            tctx.ellipse(baseX, y, size * 0.6, size * 0.42, rng() * Math.PI, 0, Math.PI * 2);
+            tctx.fill();
+          }
+        }
+      }
+
+      function paintTileRoad(tctx, palette) {
+        tctx.fillStyle = palette.roadEdge;
+        tctx.fillRect(ROAD_LEFT - 6, 0, ROAD_WIDTH + 12, TILE_H);
+        tctx.fillStyle = palette.roadColor;
+        tctx.fillRect(ROAD_LEFT, 0, ROAD_WIDTH, TILE_H);
+      }
+
+      function paintTileGravel(tctx, rng) {
+        tctx.globalAlpha = 0.18;
+        for (let i = 0; i < 90; i++) {
+          const x = ROAD_LEFT + rng() * ROAD_WIDTH;
+          const y = rng() * TILE_H;
+          tctx.fillStyle = rng() < 0.5 ? '#000' : '#fff';
+          tctx.fillRect(x, y, 2 + rng() * 3, 2 + rng() * 3);
+        }
+        tctx.globalAlpha = 1;
+      }
+
+      function hashStr(s) {
+        let h = 0; for (let i = 0; i < s.length; i++) { h = (h * 31 + s.charCodeAt(i)) | 0; }
+        return h;
+      }
+
+      /* ============ GAME STATE ============ */
+
+      /* 進行状態を切り替え、状態に連動するUI(ポーズボタンの表示・山頂演出中のクラス)も更新する。 */
+      function setState(state) {
+        game.state = state;
+        ui.pauseBtn.style.visibility = (state === STATE.PLAY) ? '' : 'hidden'; /* ポーズはプレイ中のみ有効 */
+        ui.canvasWrap.classList.toggle('is-summit', state === STATE.SUMMIT);
+      }
+
+      function isPlaying() { return game.state === STATE.PLAY && !game.paused; }
+
+      /* ゲーム進行で変化する値(game.altitude のように参照する)。 */
+      const game = {
+        state: STATE.IDLE,
+        altitude: 0,
+        lives: MAX_LIVES,
+        scrollY: 0,
+        elapsed: 0,
+        accelerating: false,
+        invincibleTimer: 0,
+        spawnTimer: 0,
+        selectedMode: DEFAULT_MODE, /* 現在選択中のモード(GAME_MODESのキー) */
+        summitCleared: false,       /* 一度でも登頂したことがあるか(true以降、タイトル画面でモード選択が可能) */
+        clearedModes: {},           /* モードごとの登頂済みフラグ(GAME_MODESのキー → true)。エンディング再生ボタンの表示に使う */
+        endingReplay: false,        /* ポーズ画面から再生しているエンディングか(true の間はタイム非表示・登頂フラグを更新しない) */
+        summitTimer: 0,
+        summitPlayerY: 0, /* 山頂到達後、真上に退場していくキャラクターのY座標 */
+        fireworks: { rockets: [], sparks: [], glows: [], launchTimer: 0 }, /* 夜の花火シーンの状態(initFireworksで初期化) */
+        successFlag: false,
+        deathStageKey: null, /* ライフが0になった瞬間の標高が属していたステージ(GAME_OVER_MESSAGES用) */
+        rocks: [],
+        clouds: [],          /* 画面手前に重ねて描く雲オブジェクトの配列(背景タイルには含まれない) */
+        cloudSpawnTimer: 0,  /* 次の雲を生成するまでのミリ秒カウントダウン */
+        player: { x: LOGICAL_W / 2, walkPhase: 0, useSprite: false, spriteLeft: null, spriteRight: null },
+        lastTs: 0,
+        flashTimer: 0, /* 被弾時の画面赤点滅の残り時間(ms)。0なら点滅していない */
+        paused: false, /* ポーズ中か(stateとは独立。trueの間は update/draw を止める) */
+        dragging: false,
+        dragLastX: 0,
+        keyLeft: false,
+        keyRight: false,
+      };
+      /* 以下の2つはゲーム進行の状態ではない(UIタイマーIDと描画キャッシュ)ため game に含めない。 */
+      let unlockToastTimer = null;        /* 生きむずモード解放トーストを自動で消すタイマーID */
+      let _scrollVignette = null;          /* drawScrollingBackground の上下暗がりグラデーション(初回に作って使い回す) */
+      let _summitCloudVisualsCache = null; /* 山頂シーンの雲の見た目キャッシュ(getSummitCloudVisualsが初回に作る) */
+
+      function currentStageKey(alt) {
+        for (const s of STAGES) { if (alt >= s.from && alt < s.to) return s.key; }
+        return STAGES[STAGES.length - 1].key;
+      }
+
+      /* 現在の標高から「今のステージ(a)」「次のステージ(b)」「bへのブレンド率(t)」を返す */
+      function getStageBlend(alt) {
+        const half = STAGE_TRANSITION_RANGE / 2;
+        for (let i = 0; i < STAGES.length; i++) {
+          const s = STAGES[i];
+          if (alt < s.to || i === STAGES.length - 1) {
+            if (i < STAGES.length - 1 && alt > s.to - half) {
+              const t = Math.min(1, (alt - (s.to - half)) / half);
+              return { a: s.key, b: STAGES[i + 1].key, t };
+            }
+            return { a: s.key, b: s.key, t: 0 };
+          }
+        }
+        return { a: STAGES[STAGES.length - 1].key, b: STAGES[STAGES.length - 1].key, t: 0 };
+      }
+
+      /* 標高に応じた雲の出やすさ(0〜1)。雲ステージ開始の手前から増え始め、開始で1になる。 */
+      function getCloudPresence(alt) {
+        const cloudStageStart = STAGES[3].from; /* rockyCloud ステージの開始標高 */
+        const half = STAGE_TRANSITION_RANGE / 2;
+        if (alt <= cloudStageStart - half) return 0;
+        if (alt >= cloudStageStart + half) return 1;
+        return (alt - (cloudStageStart - half)) / (half * 2);
+      }
+
+      /* 現在の標高に対する岩の生成間隔と速度上乗せ幅を返す。ステージ境界は背景のクロスフェードと同じ比率で補間する。 */
+      function getDifficultyParams(alt) {
+        const { a, b, t } = getStageBlend(alt);
+        const da = STAGE_DIFFICULTY[a], db = STAGE_DIFFICULTY[b];
+        return {
+          spawnIntervalMs: da.spawnIntervalMs + (db.spawnIntervalMs - da.spawnIntervalMs) * t,
+          fastRange: da.fastRange + (db.fastRange - da.fastRange) * t,
+        };
+      }
+
+      /* 歩行画像を使うかをゲーム開始前に確定する(プレイ中に読み込みが完了して見た目が切り替わるのを防ぐ)。左右どちらかが欠けたら両方フォールバックする。 */
+      function resolvePlayerSpriteAssets() {
+        const left = getLoadedImage('playerWalkLeft', ASSET_CONFIG.player.walkLeftSrc);
+        const right = getLoadedImage('playerWalkRight', ASSET_CONFIG.player.walkRightSrc);
+        game.player.useSprite = !!(left && right);
+        game.player.spriteLeft = left;
+        game.player.spriteRight = right;
+      }
+
+      function resetGame() {
+        setPaused(false); /* 念のためポーズ状態を解除 */
+        setState(STATE.PLAY);
+        game.altitude = 0; game.lives = MAX_LIVES; game.scrollY = 0; game.elapsed = 0;
+        game.accelerating = false; game.invincibleTimer = 0; game.spawnTimer = 800; game.summitTimer = 0; game.flashTimer = 0;
+        game.summitPlayerY = PLAYER_Y;
+        game.successFlag = false; game.deathStageKey = null; game.endingReplay = false;
+        game.rocks = []; game.clouds = []; game.cloudSpawnTimer = CLOUD_CONFIG.spawnIntervalMaxMs;
+        game.player.x = LOGICAL_W / 2;
+        resolvePlayerSpriteAssets(); /* プレイ画面が表示される前に、歩行画像を使うかどうかを確定させる */
+        resolveBackgroundTiles();    /* 同じく、背景タイルとその描画高さを確定させる(プレイ中は再計算しない) */
+        updateLivesUI();
+        game.lastTs = 0;
+        resizeCanvas();
+      }
+
+      function updateLivesUI() {
+        const hearts = ui.livesBox.querySelectorAll('.life-heart');
+        hearts.forEach((h, i) => {
+          if (i < game.lives) h.classList.remove('lost'); else h.classList.add('lost');
+        });
+      }
+
+      /* fastRange: 現在のステージの速度上乗せ幅。 */
+      function spawnRock(fastRange) {
+        /* 速度は背景スクロール速度(倍率1.0)が下限。fastRangeが大きいほど速い落石が混ざる。 */
+        const speedMul = 1 + Math.random() * fastRange;
+        const excess = Math.max(0, speedMul - 1);
+        const vx = excess > 0.0001
+          ? (Math.random() < 0.5 ? -1 : 1) * excess * ROCK_DIAGONAL_FACTOR * (0.5 + Math.random() * 0.7)
+          : 0;
+        game.rocks.push(createRock(speedMul, vx));
+      }
+
+      /* 岩を1個作って返す。位置・大きさ・形はランダムで、速度(speedMul, vx)だけを引数で決める。 */
+      function createRock(speedMul, vx) {
+        const x = ROAD_LEFT + ROCK_X_MARGIN + Math.random() * (ROAD_WIDTH - ROCK_X_MARGIN * 2);
+        const r = ROCK_RADIUS_MIN + Math.random() * ROCK_RADIUS_RANGE;
+        const spikes = ROCK_SPIKES_MIN + Math.floor(Math.random() * ROCK_SPIKES_RANGE); /* 7〜10角 */
+        const verts = [];
+        for (let i = 0; i < spikes; i++) {
+          const angJitter = (Math.random() - 0.5) * (Math.PI * 2 / spikes) * ROCK_ANGLE_JITTER;
+          const ang = (i / spikes) * Math.PI * 2 + angJitter;
+          /* 出っ張り/へこみの差を控えめにして、角を鈍角気味にする */
+          const jag = (i % 2 === 0)
+            ? ROCK_DENT_MIN + Math.random() * ROCK_DENT_RANGE   /* へこみ */
+            : ROCK_BUMP_MIN + Math.random() * ROCK_BUMP_RANGE;  /* 出っ張り */
+          verts.push({ ang, rad: jag });
+        }
+        return { x, y: -r - 10, r, speedMul, vx, hit: false, verts, rot: Math.random() * Math.PI * 2 };
+      }
+
+      /* 速度1・vx=0(背景と同速で止まって見える)の岩を作る。update側が画面内に最低1つの存在を保証する。 */
+      function spawnStationaryRock() {
+        game.rocks.push(createRock(1, 0));
+      }
+
+      /* 岩の生成間隔を返す(加速中は短縮し、SPAWN_INTERVAL_MIN_MSを下限とする)。 */
+      function spawnIntervalFor(baseIntervalMs, boosting) {
+        let interval = baseIntervalMs;
+        if (boosting) interval *= SPAWN_BOOST_INTERVAL_MULT;
+        return Math.max(SPAWN_INTERVAL_MIN_MS, interval);
+      }
+
+      /* 雲1つの見た目を作る(プレイ中の雲と山頂の雲海で共通)。ASSET_CONFIG.cloud があればその画像、無ければCLOUD_EMOJI_TEMPLATEから生成する。戻り値: {image, imgW, imgH, centerOffsetX, centerOffsetY}。 */
+      function createCloudVisual(cloudW) {
+        return bakeCloudBlur(createCloudVisualRaw(cloudW));
+      }
+
+      /* ぼかしを描画ごとではなく生成時に1回だけ焼き込む(毎フレームの ctx.filter が重いため)。はみ出し防止に四方へ余白を足す。 */
+      function bakeCloudBlur(v) {
+        const margin = Math.ceil(CLOUD_CONFIG.blurPx * 3);
+        const w = Math.ceil(v.imgW + margin * 2), h = Math.ceil(v.imgH + margin * 2);
+        const c = document.createElement('canvas');
+        c.width = w; c.height = h;
+        const cctx = c.getContext('2d');
+        cctx.filter = `blur(${CLOUD_CONFIG.blurPx}px)`;
+        cctx.drawImage(v.image, margin, margin, v.imgW, v.imgH);
+        return {
+          image: c, imgW: w, imgH: h,
+          centerOffsetX: v.centerOffsetX + margin,
+          centerOffsetY: v.centerOffsetY + margin,
+        };
+      }
+
+      function createCloudVisualRaw(cloudW) {
+        const asset = getLoadedImage('cloud', ASSET_CONFIG.cloud.src);
+        if (asset) {
+          const imgW = cloudW;
+          const imgH = cloudW * (asset.naturalHeight / asset.naturalWidth);
+          return { image: asset, imgW, imgH, centerOffsetX: imgW / 2, centerOffsetY: imgH / 2 };
+        }
+
+        const cfg = CLOUD_CONFIG;
+        const jitter = () => 1 + (Math.random() - 0.5) * cfg.puffJitter;
+        const puffs = CLOUD_EMOJI_TEMPLATE.map(t => ({
+          dx: t.dx * cloudW * jitter(),
+          dy: t.dy * cloudW * jitter(),
+          r: t.r * cloudW * jitter(),
+        }));
+
+        let minX = Infinity, maxX = -Infinity, minY = Infinity, maxY = -Infinity;
+        for (const p of puffs) {
+          minX = Math.min(minX, p.dx - p.r); maxX = Math.max(maxX, p.dx + p.r);
+          minY = Math.min(minY, p.dy - p.r); maxY = Math.max(maxY, p.dy + p.r);
+        }
+        const margin = cfg.blurPx * 3; /* ぼかしが外側にはみ出しても切れないための余白 */
+        const canvasW = Math.ceil((maxX - minX) + margin * 2);
+        const canvasH = Math.ceil((maxY - minY) + margin * 2);
+        const off = document.createElement('canvas');
+        off.width = canvasW;
+        off.height = canvasH;
+        const octx = off.getContext('2d');
+        const originX = margin - minX, originY = margin - minY;
+
+        /* --- 不透明(alpha=1)の白でパフを焼き込み、重なりを1色にマージする --- */
+        octx.fillStyle = '#ffffff';
+        for (const p of puffs) {
+          octx.beginPath();
+          octx.arc(originX + p.dx, originY + p.dy, p.r, 0, Math.PI * 2);
+          octx.fill();
+        }
+
+        return {
+          image: off, imgW: canvasW, imgH: canvasH,
+          centerOffsetX: originX, /* テンプレート原点(0,0)がcanvas内のどこにあるか */
+          centerOffsetY: originY,
+        };
+      }
+
+      /* 雲を1つ生成して clouds に追加する。presence が高いほど濃くなる。 */
+      function spawnCloud(presence) {
+        const cfg = CLOUD_CONFIG;
+        const cloudW = cfg.cloudMinW + Math.random() * (cfg.cloudMaxW - cfg.cloudMinW);
+        const visual = createCloudVisual(cloudW);
+
+        game.clouds.push({
+          image: visual.image,
+          imgW: visual.imgW, imgH: visual.imgH,
+          centerOffsetX: visual.centerOffsetX, centerOffsetY: visual.centerOffsetY,
+          x: Math.random() * LOGICAL_W,      /* 画面全幅からランダム(道の上にもかかりうる) */
+          y: -visual.imgH,                    /* 画面上端の外からスタート */
+          h: visual.imgH,                     /* 画面外判定に使う高さ */
+          phase: Math.random() * Math.PI * 2, /* 横揺れアニメーションの位相をずらす */
+          age: 0,
+          opacity: cfg.baseOpacity * (0.6 + 0.4 * presence),
+        });
+      }
+
+      /* 雲海用の雲ビジュアルを一度だけ生成してキャッシュする。 */
+      function getSummitCloudVisuals() {
+        if (!_summitCloudVisualsCache) {
+          const sizes = [120, 150, 135]; /* 雲海に使う雲の横幅(論理ピクセル)のバリエーション */
+          _summitCloudVisualsCache = sizes.map(w => createCloudVisual(w));
+        }
+        return _summitCloudVisualsCache;
+      }
+
+      /* ============ UPDATE ============ */
+      /* state に応じて updatePlay / updateSummit に振り分ける。 */
+      function update(dt) {
+        if (game.state === STATE.PLAY) {
+          if (!updatePlay(dt)) return; /* ライフが尽きて結果画面へ移った場合は、以降の更新をしない */
+        } else if (game.state === STATE.SUMMIT) {
+          updateSummit(dt);
+        }
+
+        updateHitFlash(dt);
+      }
+
+      /* プレイ中の更新。ライフが尽きて結果画面へ移った場合は false、それ以外は true を返す。 */
+      function updatePlay(dt) {
+        game.elapsed += dt; /* タイム表示用。プレイ中のみ加算する */
+        applyKeyboardMove(dt);
+        const boosting = game.accelerating;
+        /* 標高ペースと見た目速度は別の倍率。見た目速度は標高で上がり、加速倍率がさらに掛かる。 */
+        const altRate = BASE_ALT_RATE * (boosting ? ALT_BOOST_MULT : 1);
+        const scrollSpeed = BASE_SCROLL * getScrollAltMultiplier(game.altitude) * (boosting ? SCROLL_BOOST_MULT : 1);
+
+        game.altitude += altRate * dt;
+        game.scrollY += scrollSpeed * dt; /* 背景タイルのスクロール位置(drawScrollingBackgroundで使用) */
+
+        spawnRocksForFrame(dt, boosting);
+        moveRocks(dt, scrollSpeed);
+        updateClouds(dt, scrollSpeed);
+
+        if (game.invincibleTimer > 0) game.invincibleTimer -= dt * 1000;
+
+        if (checkRockCollisions()) return false;
+
+        if (game.altitude >= TARGET_ALT) {
+          game.altitude = TARGET_ALT;
+          setState(STATE.SUMMIT);
+          game.summitTimer = 0;
+          game.summitPlayerY = PLAYER_Y; /* 退場アニメーションの開始位置をリセット */
+          initFireworks();
+        }
+
+        /* 左右移動に関わらず常に歩行アニメを進める(加速中は速く)。 */
+        game.player.walkPhase += dt * (boosting ? WALK_PHASE_RATE_FAST : WALK_PHASE_RATE);
+
+        return true;
+      }
+
+      function spawnRocksForFrame(dt, boosting) {
+        const diff = getDifficultyParams(game.altitude);
+        game.spawnTimer -= dt * 1000;
+        if (game.spawnTimer <= 0) {
+          spawnRock(diff.fastRange);
+          game.spawnTimer = spawnIntervalFor(diff.spawnIntervalMs, boosting) / GAME_MODES[game.selectedMode].rockCountMult;
+        }
+
+        /* 止まっている岩が画面内に無ければ補完し、常に最低1つを維持する。 */
+        if (!game.rocks.some(r => r.speedMul <= ROCK_STILL_SPEED_MUL && r.vx === 0)) {
+          spawnStationaryRock();
+        }
+
+      }
+
+      function moveRocks(dt, scrollSpeed) {
+        for (const r of game.rocks) {
+          const fallSpeed = scrollSpeed * r.speedMul; /* 実際の落下速度(px/s) */
+          r.y += fallSpeed * dt;
+          if (r.speedMul > ROCK_STILL_SPEED_MUL) {
+            const relSpeed = fallSpeed - scrollSpeed; /* 岩の落下速度と背景スクロール速度の差 */
+            r.rot += relSpeed * ROCK_SPIN_FACTOR * dt;
+          }
+          if (r.vx) {
+            r.x += r.vx * dt;
+            const leftBound = ROAD_LEFT + r.r + 2, rightBound = ROAD_RIGHT - r.r - 2;
+            if (r.x < leftBound) { r.x = leftBound; r.vx *= -1; }
+            else if (r.x > rightBound) { r.x = rightBound; r.vx *= -1; }
+          }
+        }
+        game.rocks = game.rocks.filter(r => r.y - r.r < LOGICAL_H + 20);
+
+      }
+
+      function updateClouds(dt, scrollSpeed) {
+        const cloudPresence = getCloudPresence(game.altitude); /* 0(まだ出ない)〜1(最大量) */
+        game.cloudSpawnTimer -= dt * 1000;
+        if (cloudPresence > 0 && game.cloudSpawnTimer <= 0 && game.clouds.length < CLOUD_CONFIG.maxCloudsOnScreen) {
+          spawnCloud(cloudPresence);
+          game.cloudSpawnTimer = CLOUD_CONFIG.spawnIntervalMaxMs
+            - (CLOUD_CONFIG.spawnIntervalMaxMs - CLOUD_CONFIG.spawnIntervalMinMs) * cloudPresence;
+        }
+        for (const cl of game.clouds) {
+          cl.age += dt; /* ふわふわ揺れる横方向アニメーションの位相に使う */
+          cl.y += scrollSpeed * CLOUD_CONFIG.verticalSpeedFactor * dt;
+        }
+        game.clouds = game.clouds.filter(cl => cl.y < LOGICAL_H + 80);
+
+      }
+
+      /* 岩とプレイヤーの当たり判定。ライフが尽きて結果画面へ移った場合は true を返す。 */
+      function checkRockCollisions() {
+        if (game.invincibleTimer <= 0) {
+          for (const r of game.rocks) {
+            if (r.hit) continue; /* 既に当たった岩は無視(同じ岩で連続ヒットしない) */
+            const dx = r.x - game.player.x, dy = r.y - PLAYER_Y;
+            const dist = Math.sqrt(dx * dx + dy * dy);
+            if (dist < r.r + PLAYER_R * 0.75) {
+              r.hit = true;
+              game.lives -= 1;
+              updateLivesUI();
+              game.invincibleTimer = INVINCIBLE_MS; /* ms: この間は無敵(点滅表示) */
+              game.flashTimer = HIT_FLASH_BLINKS * (HIT_FLASH_ON_MS + HIT_FLASH_OFF_MS); /* 画面の赤点滅を開始(キャラの点滅とは別管理) */
+              if (game.lives <= 0) {
+                finishGame(false); /* ライフが尽きたら即リザルト(失敗)へ */
+                return true;
+              }
+            }
+          }
+        }
+
+        return false;
+      }
+
+      function updateSummit(dt) {
+        game.summitTimer += dt;
+        if (getSummitPhase(game.summitTimer) === SUMMIT_PHASE.EXIT) {
+          game.summitPlayerY -= SUMMIT_EXIT_SPEED * dt;
+          game.player.walkPhase += dt * WALK_PHASE_RATE_FAST;
+        }
+        /* 花火シーンは、暗転が明け始める時点(SUMMIT_T2)から打ち上げを始める */
+        if (isFireworksScene() && game.summitTimer >= SUMMIT_T2) updateFireworks(dt);
+        if (game.summitTimer > getSummitEndTime()) {
+          finishGame(true); /* 演出が終わったら成功リザルトへ */
+        }
+      }
+
+      function updateHitFlash(dt) {
+        /* 画面の赤点滅は、キャラクターの点滅(invincibleTimer)とは独立して動く。 */
+        let flashOpacity = 0;
+        if (game.flashTimer > 0) {
+          game.flashTimer = Math.max(0, game.flashTimer - dt * 1000);
+          const total = HIT_FLASH_BLINKS * (HIT_FLASH_ON_MS + HIT_FLASH_OFF_MS);
+          const phase = (total - game.flashTimer) % (HIT_FLASH_ON_MS + HIT_FLASH_OFF_MS);
+          if (game.flashTimer > 0 && phase < HIT_FLASH_ON_MS) flashOpacity = HIT_FLASH_ALPHA;
+        }
+        ui.flashOverlay.style.opacity = flashOpacity.toFixed(2);
+      }
+
+      function finishGame(success) {
+        game.successFlag = success;
+        const firstSummit = success && !game.summitCleared; /* 今回が初めての登頂か(=今回フラグが立つか) */
+        if (success && !game.endingReplay) markSummitCleared(); /* 登頂フラグを立てる(タイトル画面のモード選択が解放される) */
+        if (!success) {
+          game.deathStageKey = currentStageKey(game.altitude);
+        }
+        setState(STATE.RESULT);
+        showResult();
+        if (firstSummit) showUnlockToast(); /* 初登頂時だけ「生きむずモード解放」のトーストを出す */
+      }
+
+      function showUnlockToast() {
+        const el = ui.unlockToast;
+        el.classList.add('show');
+        clearTimeout(unlockToastTimer);
+        unlockToastTimer = setTimeout(hideUnlockToast, UNLOCK_TOAST_MS);
+      }
+      function hideUnlockToast() {
+        clearTimeout(unlockToastTimer);
+        ui.unlockToast.classList.remove('show');
+      }
+
+      /* ============ DRAW ― 描画順は 背景→岩→プレイヤー→雲(最前面)。summit 中は専用の演出分岐 ============ */
+      function draw() {
+        ctx.clearRect(0, 0, LOGICAL_W, LOGICAL_H);
+
+        if (game.state === STATE.SUMMIT) {
+          const phase = getSummitPhase(game.summitTimer);
+          if (phase === SUMMIT_PHASE.EXIT) {
+            drawScrollingBackground();
+            drawRocks();
+            drawPlayer(game.summitPlayerY);
+            const a = game.summitTimer / SUMMIT_FADEOUT; /* 0→1でどんどん黒く */
+            ctx.fillStyle = `rgba(0,0,0,${a})`;
+            ctx.fillRect(0, 0, LOGICAL_W, LOGICAL_H);
+          } else if (phase === SUMMIT_PHASE.BLACK) {
+            ctx.fillStyle = '#000';
+            ctx.fillRect(0, 0, LOGICAL_W, LOGICAL_H);
+          } else {
+            if (isFireworksScene()) {
+              drawFireworksScene();
+            } else {
+              const sunT = Math.min(1, (game.summitTimer - SUMMIT_T2) / SUNRISE_RISE_DURATION);
+              drawSummitScene(sunT);
+            }
+            if (phase === SUMMIT_PHASE.FADEIN) {
+              const a = 1 - (game.summitTimer - SUMMIT_T2) / SUMMIT_FADEIN; /* 1→0で黒が晴れていく */
+              ctx.fillStyle = `rgba(0,0,0,${Math.max(0, a)})`;
+              ctx.fillRect(0, 0, LOGICAL_W, LOGICAL_H);
+            }
+          }
+        } else {
+          drawScrollingBackground(); /* 1. 背景 */
+          drawRocks();               /* 2. 岩 */
+          drawPlayer();              /* 3. プレイヤー */
+          drawClouds();              /* 4. 雲(いちばん手前。道や岩・プレイヤーに重なって視界を遮る) */
+        }
+      }
+
+      /* 指定ステージの背景タイル(resolveBackgroundTiles で確定済み)を、画面を覆うまで縦に敷き詰める。 */
+      function drawBackgroundTiles(stageKey, alpha) {
+        const { tile, h } = resolvedBgTiles[stageKey];
+        ctx.globalAlpha = alpha;
+        for (let y = (game.scrollY % h) - h; y < LOGICAL_H; y += h) {
+          ctx.drawImage(tile, 0, y, LOGICAL_W, h);
+        }
+        ctx.globalAlpha = 1;
+      }
+
+      /* 現ステージと次ステージの背景タイルを scrollY で流し、境界付近は globalAlpha でクロスフェードする(タイル高さはステージごと)。 */
+      function drawScrollingBackground() {
+        const { a, b, t } = getStageBlend(game.altitude); /* a=現ステージ, b=次ステージ, t=bへの混合率(0〜1) */
+
+        drawBackgroundTiles(a, 1);
+        if (t > 0) drawBackgroundTiles(b, t);
+
+        drawRopes(); /* 移動可能範囲の左右両端のロープ(背景と一緒にスクロール) */
+
+        if (!_scrollVignette) { /* 上下端を暗くするグラデーションはステージに依らず不変なので、初回に作って使い回す */
+          _scrollVignette = ctx.createLinearGradient(0, 0, 0, LOGICAL_H);
+          _scrollVignette.addColorStop(0, 'rgba(0,0,0,0.35)');
+          _scrollVignette.addColorStop(0.15, 'rgba(0,0,0,0)');
+          _scrollVignette.addColorStop(0.85, 'rgba(0,0,0,0)');
+          _scrollVignette.addColorStop(1, 'rgba(0,0,0,0.35)');
+        }
+        ctx.fillStyle = _scrollVignette;
+        ctx.fillRect(0, 0, LOGICAL_W, LOGICAL_H);
+      }
+
+      /* 移動範囲の左右端に杭とロープを描く。背景と同じ scrollY で流れ、杭の間でロープは外側へ膨らむ。 */
+      function drawRopes() {
+        const c = ROPE_CONFIG, S = c.postSpacing;
+        const offset = game.scrollY % S;
+        ctx.save();
+        ctx.lineCap = 'round';
+        [[ROAD_LEFT, -1], [ROAD_RIGHT, 1]].forEach(([x, outward]) => {
+          const bowX = x + outward * c.sag;
+          const strokeRope = (color, width, dash) => {
+            ctx.strokeStyle = color;
+            ctx.lineWidth = width;
+            ctx.setLineDash(dash || []);
+            ctx.lineDashOffset = -game.scrollY; /* 模様も背景と同じ速さで流す */
+            ctx.beginPath();
+            for (let y = offset - S; y < LOGICAL_H + S; y += S) {
+              ctx.moveTo(x, y);
+              ctx.quadraticCurveTo(bowX, y + S / 2, x, y + S);
+            }
+            ctx.stroke();
+          };
+          strokeRope(c.colorOutline, c.width + 2);
+          strokeRope(c.colorBase, c.width);
+          strokeRope(c.colorTwist, c.width, c.twistDash);
+          ctx.setLineDash([]);
+          for (let y = offset - S; y < LOGICAL_H + S; y += S) {
+            ctx.beginPath();
+            ctx.arc(x + 1, y + 1.5, c.postRadius, 0, Math.PI * 2);
+            ctx.fillStyle = 'rgba(0,0,0,0.3)';
+            ctx.fill();
+            ctx.beginPath();
+            ctx.arc(x, y, c.postRadius, 0, Math.PI * 2);
+            ctx.fillStyle = c.colorPost;
+            ctx.fill();
+            ctx.beginPath();
+            ctx.arc(x - 1, y - 1, c.postRadius * 0.55, 0, Math.PI * 2);
+            ctx.fillStyle = c.colorPostTop;
+            ctx.fill();
+          }
+        });
+        ctx.restore();
+      }
+
+      /* 岩を描く。ASSET_CONFIG.rock があれば回転させた画像、無ければ仮のゴツゴツした多角形。 */
+      function drawRocks() {
+        const stageKey = currentStageKey(game.altitude);
+        const rockBase = stageKey === 'forest' ? '#5a4636' : (stageKey === 'rockyDay' ? '#5f594d' : '#40465c');
+        const rockAsset = getLoadedImage('rock', ASSET_CONFIG.rock.src);
+
+        for (const r of game.rocks) {
+          drawRockShadow(r);
+          if (rockAsset) drawRockSprite(r, rockAsset);   /* 画像アセットがあれば画像を回転させて描く */
+          else drawProceduralRock(r, rockBase);         /* なければ仮のゴツゴツした岩を描く */
+        }
+      }
+
+      function drawRockShadow(r) {
+        ctx.beginPath();
+        ctx.ellipse(r.x, r.y + r.r * 0.55, r.r * 0.9, r.r * 0.35, 0, 0, Math.PI * 2);
+        ctx.fillStyle = 'rgba(0,0,0,0.3)';
+        ctx.fill();
+
+      }
+
+      function drawRockSprite(r, rockAsset) {
+        const size = r.r * 2;
+        ctx.save();
+        ctx.translate(r.x, r.y);
+        ctx.rotate(r.rot);
+        ctx.drawImage(rockAsset, -size / 2, -size / 2, size, size);
+        ctx.restore();
+      }
+
+      function drawProceduralRock(r, rockBase) {
+        const pts = r.verts.map(v => {
+          const a = v.ang + r.rot;
+          const rad = r.r * v.rad;
+          return { x: r.x + Math.cos(a) * rad, y: r.y + Math.sin(a) * rad, ang: a };
+        });
+
+        ctx.beginPath();
+        pts.forEach((p, i) => i === 0 ? ctx.moveTo(p.x, p.y) : ctx.lineTo(p.x, p.y));
+        ctx.closePath();
+        ctx.fillStyle = rockBase;
+        ctx.fill();
+        ctx.strokeStyle = 'rgba(0,0,0,0.35)';
+        ctx.lineWidth = 1;
+        ctx.stroke();
+
+        const cx = r.x, cy = r.y;
+        for (let i = 0; i < pts.length; i++) {
+          const a = pts[i], b = pts[(i + 1) % pts.length];
+          const midAng = (a.ang + b.ang) / 2;
+          const lightness = -Math.cos(midAng - Math.PI * 0.78); /* -1(暗)〜1(明) */
+          ctx.beginPath();
+          ctx.moveTo(cx, cy);
+          ctx.lineTo(a.x, a.y);
+          ctx.lineTo(b.x, b.y);
+          ctx.closePath();
+          if (lightness > 0.15) {
+            ctx.fillStyle = `rgba(255,255,255,${0.06 + lightness * 0.16})`;
+          } else if (lightness < -0.15) {
+            ctx.fillStyle = `rgba(0,0,0,${0.06 + (-lightness) * 0.22})`;
+          } else {
+            continue;
+          }
+          ctx.fill();
+        }
+      }
+
+      /* 雲を最前面に描く。ぼかしは画像に焼き込み済みで、globalAlpha で全体を均一に薄める。 */
+      function drawClouds() {
+        if (game.clouds.length === 0) return;
+
+        ctx.save();
+
+        for (const cl of game.clouds) {
+          const driftX = Math.sin(cl.age * CLOUD_CONFIG.driftFreqHz * Math.PI * 2 + cl.phase) * CLOUD_CONFIG.driftAmp;
+
+          /* cl.y は画像の上端。centerOffsetX は雲の中心に横位置を合わせるために使う。 */
+          ctx.globalAlpha = cl.opacity; /* 画像全体をまとめて1回だけ薄める(色ムラが出ない) */
+          ctx.drawImage(
+            cl.image,
+            cl.x + driftX - cl.centerOffsetX,
+            cl.y,
+            cl.imgW, cl.imgH
+          );
+        }
+
+        ctx.globalAlpha = 1;
+        ctx.restore();
+      }
+
+      /* プレイヤーを描く(baseY省略時は PLAYER_Y)。歩行画像があれば左右を交互に、無ければプロシージャル描画。 */
+      function drawPlayer(baseY) {
+        if (baseY === undefined) baseY = PLAYER_Y;
+        /* 無敵時間中は一定間隔で描画を飛ばして点滅させる。 */
+        if (game.invincibleTimer > 0 && Math.floor(game.invincibleTimer / INVINCIBLE_BLINK_MS) % 2 === 0) return;
+
+        const x = game.player.x, y = baseY;
+
+        ctx.beginPath();
+        ctx.ellipse(x, baseY + 14, 13, 5, 0, 0, Math.PI * 2);
+        ctx.fillStyle = 'rgba(0,0,0,0.3)';
+        ctx.fill();
+
+        const rightFootUp = Math.sin(game.player.walkPhase) >= 0;
+
+        /* 画像を使うかは resetGame() で事前に確定済み(毎フレーム判定すると途中で見た目が切り替わるため)。 */
+        if (game.player.useSprite) {
+          drawPlayerSprite(x, y, rightFootUp);
+          return;
+        }
+
+        drawProceduralPlayer(x, y, rightFootUp);
+      }
+
+      function drawPlayerSprite(x, y, rightFootUp) {
+        const sprite = rightFootUp ? game.player.spriteRight : game.player.spriteLeft;
+        const w = ASSET_CONFIG.player.drawWidth, h = ASSET_CONFIG.player.drawHeight;
+        ctx.drawImage(sprite, x - w / 2, y - h * 0.6, w, h);
+      }
+
+      function drawProceduralPlayer(x, y, rightFootUp) {
+        ctx.beginPath();
+        ctx.moveTo(x, y + 3);
+        ctx.lineTo(x - 9, y + 16);
+        ctx.lineTo(x + 9, y + 16);
+        ctx.closePath();
+        ctx.fillStyle = COLORS.PLAYER_JACKET;
+        ctx.fill();
+
+        const footLift = 3.5;
+        ctx.fillStyle = COLORS.PLAYER_DARK;
+        ctx.beginPath();
+        ctx.ellipse(x - 5, y + 16 - (rightFootUp ? 0 : footLift), 3.2, 2, 0, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.beginPath();
+        ctx.ellipse(x + 5, y + 16 - (rightFootUp ? footLift : 0), 3.2, 2, 0, 0, Math.PI * 2);
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.arc(x, y - 4, 7, 0, Math.PI * 2);
+        ctx.fillStyle = COLORS.PLAYER_FACE;
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.arc(x, y - 7, 7.5, Math.PI, 0);
+        ctx.fillStyle = COLORS.PLAYER_HAT;
+        ctx.fill();
+      }
+
+      /* 山頂の日の出シーン(t: 0〜1 の日の出進行度)。奥から 空→太陽→富士山→雲海→キャラクターの順に描く。 */
+      function drawSummitScene(t) {
+        drawSummitSky(t);
+        drawSummitSun(t);
+        const peakY = drawSummitFuji(); /* 富士山の頂点のY座標(キャラクターの位置合わせに使う) */
+        drawSummitCloudSea();           /* 雲海は富士山より手前(富士山に雲がかかる) */
+        drawSummitCharacter(peakY);
+      }
+
+      function drawSummitSky(t) {
+        const g = ctx.createLinearGradient(0, 0, 0, LOGICAL_H * SUMMIT_HORIZON);
+        g.addColorStop(0, lerpColor('#0d1730', '#2c3a63', t));
+        g.addColorStop(0.5, lerpColor('#1c2547', '#ff8a5b', t * 0.9));
+        g.addColorStop(1, lerpColor('#2a2f4c', '#ffd28a', t));
+        ctx.fillStyle = g;
+        ctx.fillRect(0, 0, LOGICAL_W, LOGICAL_H * SUMMIT_HORIZON);
+      }
+
+      function drawSummitSun(t) {
+        const sunY = LOGICAL_H * SUMMIT_HORIZON - t * LOGICAL_H * 0.22 - 10;
+        const glow = ctx.createRadialGradient(LOGICAL_W / 2, sunY, 4, LOGICAL_W / 2, sunY, 120);
+        glow.addColorStop(0, 'rgba(255,240,200,0.95)');
+        glow.addColorStop(1, 'rgba(255,200,120,0)');
+        ctx.fillStyle = glow;
+        ctx.fillRect(LOGICAL_W / 2 - 120, sunY - 120, 240, 240);
+        ctx.beginPath();
+        ctx.arc(LOGICAL_W / 2, sunY, 30, 0, Math.PI * 2);
+        ctx.fillStyle = '#fff3d6';
+        ctx.fill();
+      }
+
+      function drawSummitCloudSea() {
+        /* 雲を複数レイヤー・控えめな数で並べ、summitTimer に応じて横へ流す。 */
+        const summitClouds = getSummitCloudVisuals();
+        const SUMMIT_CLOUD_ROWS = 2; /* 雲の行数 */
+        const SUMMIT_CLOUD_COLS = 3; /* 1行あたりの雲の数(間隔をあけるため少なめ) */
+        const SUMMIT_CLOUD_ROW_GAP = 50; /* 行どうしの縦の間隔(px) */
+        const SUMMIT_CLOUD_SLOTS = SUMMIT_CLOUD_ROWS * SUMMIT_CLOUD_COLS;
+        const SUMMIT_CLOUD_SPAN = LOGICAL_W + 140; /* 雲が画面外に完全に隠れるまでの周期幅 */
+        ctx.save(); /* ぼかしは雲の画像に焼き込み済み(bakeCloudBlur)なので、ctx.filter は使わない */
+        for (let i = 0; i < SUMMIT_CLOUD_ROWS; i++) {
+          const cy = LOGICAL_H * 0.6 + i * SUMMIT_CLOUD_ROW_GAP;
+          const alpha = 0.55 - i * 0.05;
+          for (let j = 0; j < SUMMIT_CLOUD_COLS; j++) {
+            const slot = i * SUMMIT_CLOUD_COLS + j;
+            /* 各行は周期幅を等間隔に分け、2行目は半間隔ずらして上下の雲が縦に並ばないようにする。 */
+            const baseX = (j + i / SUMMIT_CLOUD_ROWS) * (SUMMIT_CLOUD_SPAN / SUMMIT_CLOUD_COLS);
+            const cx = (baseX + game.summitTimer * 8) % SUMMIT_CLOUD_SPAN - 70;
+            const cv = summitClouds[slot % summitClouds.length];
+            ctx.globalAlpha = alpha;
+            ctx.drawImage(
+              cv.image,
+              cx - cv.centerOffsetX,
+              cy - cv.centerOffsetY,
+              cv.imgW, cv.imgH
+            );
+          }
+        }
+        ctx.globalAlpha = 1;
+        ctx.restore();
+      }
+
+      function drawSummitFuji() {
+        /* peakY(山頂のY座標)は画像・仮シルエットのどちらでも記録し、キャラクターの位置合わせに使う。 */
+        const fujiCfg = ASSET_CONFIG.summitFuji;
+        const fujiAsset = getLoadedImage('summitFuji', fujiCfg.src);
+        let peakY;
+        if (fujiAsset) {
+          const w = LOGICAL_W * fujiCfg.widthRatio;
+          const h = w * (fujiAsset.naturalHeight / fujiAsset.naturalWidth);
+          ctx.drawImage(fujiAsset, (LOGICAL_W - w) / 2 + fujiCfg.offsetX, LOGICAL_H - h + fujiCfg.offsetY, w, h);
+          /* 透過PNGは山の形にトリミング済みの前提で、画像の上端を山頂(peakY)とする。 */
+          peakY = LOGICAL_H - h + fujiCfg.offsetY;
+        } else {
+          /* 画像と同じ設定が効く台形。底辺=画面下端(offsetY分ずらす)、底辺の幅=画面幅×widthRatio、中心X=画面中央+offsetX。 */
+          const fc = FUJI_FALLBACK;
+          const cx = LOGICAL_W / 2 + fujiCfg.offsetX;
+          const baseY = LOGICAL_H + fujiCfg.offsetY;
+          const baseW = LOGICAL_W * fujiCfg.widthRatio;
+          const topW = baseW * fc.topWidthRatio;
+          const mountH = baseW * fc.heightRatio;
+          peakY = baseY - mountH; /* 山頂(平らな部分)のY座標 */
+          const halfAt = (y) => topW / 2 + (baseW - topW) / 2 * ((y - peakY) / mountH); /* 高さyでの山の半幅(左右の斜面は直線) */
+
+          ctx.beginPath();
+          ctx.moveTo(cx - baseW / 2, baseY);
+          ctx.lineTo(cx - topW / 2, peakY);
+          ctx.lineTo(cx + topW / 2, peakY);
+          ctx.lineTo(cx + baseW / 2, baseY);
+          ctx.closePath();
+          ctx.fillStyle = fc.colorBody;
+          ctx.fill();
+
+          /* 山頂付近の雪(山と同じ斜面に沿った台形) */
+          const snowY = peakY + mountH * fc.snowHeightRatio;
+          const snowHalf = halfAt(snowY);
+          ctx.beginPath();
+          ctx.moveTo(cx - snowHalf, snowY);
+          ctx.lineTo(cx - topW / 2, peakY);
+          ctx.lineTo(cx + topW / 2, peakY);
+          ctx.lineTo(cx + snowHalf, snowY);
+          ctx.closePath();
+          ctx.fillStyle = fc.colorSnow;
+          ctx.fill();
+        }
+        return peakY;
+      }
+
+      function drawSummitCharacter(peakY) {
+        /* 足元(footY)を山頂のすぐ下に置き、画像/仮描画のどちらでも山頂に立って見えるようにする。 */
+        const px = LOGICAL_W * 0.5;
+        const footY = peakY + 4; /* 頂点に少しめり込ませて「乗っている」ように見せる */
+        const summitCharAsset = getLoadedImage('summitCharacter', ASSET_CONFIG.summitCharacter.src);
+        if (summitCharAsset) {
+          const w = ASSET_CONFIG.summitCharacter.drawWidth;
+          const h = w * (summitCharAsset.naturalHeight / summitCharAsset.naturalWidth);
+          ctx.drawImage(summitCharAsset, px - w / 2, footY - h, w, h);
+        } else {
+          ctx.beginPath();
+          ctx.moveTo(px, footY - 16);
+          ctx.lineTo(px - 8, footY);
+          ctx.lineTo(px + 8, footY);
+          ctx.closePath();
+          ctx.fillStyle = COLORS.PLAYER_JACKET;
+          ctx.fill();
+          ctx.beginPath();
+          ctx.arc(px, footY - 21, 6, 0, Math.PI * 2);
+          ctx.fillStyle = COLORS.PLAYER_FACE;
+          ctx.fill();
+          ctx.beginPath();
+          ctx.arc(px, footY - 24, 6.5, Math.PI, 0);
+          ctx.fillStyle = COLORS.PLAYER_HAT;
+          ctx.fill();
+        }
+      }
+
+
+      /* ============ NIGHT FIREWORKS SCENE (生きむずモードの登頂後) ============ */
+
+
+      function initFireworks() {
+        game.fireworks = { rockets: [], sparks: [], glows: [], launchTimer: 0.2 };
+      }
+
+      function launchFirework() {
+        const fw = game.fireworks;
+        fw.rockets.push({
+          x: LOGICAL_W * (0.15 + Math.random() * 0.7),
+          y: LOGICAL_H * 0.8,
+          vx: (Math.random() - 0.5) * 20,
+          vy: -(340 + Math.random() * 100),
+          targetY: LOGICAL_H * (0.13 + Math.random() * 0.27), /* この高さまで昇ったら開花 */
+        });
+      }
+
+      /* 火花1つ分のオブジェクトを作る。 */
+      function makeSpark(x, y, vx, vy, life, hue, light, size, grav, drag) {
+        return { x, y, vx, vy, life, maxLife: life, hue, light, size, grav, drag };
+      }
+
+      /* (x,y) で花火を開花させる。形は「ぼたん/輪/しだれ」からランダム。 */
+      function explodeFirework(x, y) {
+        const fw = game.fireworks;
+        if (fw.sparks.length > FIREWORKS_MAX_SPARKS) return;
+        const hue = Math.floor(Math.random() * 360);
+        const r = Math.random();
+        const kind = r < 0.45 ? 'peony' : (r < 0.75 ? 'ring' : 'willow');
+        const count = kind === 'ring' ? 44 : (kind === 'peony' ? 64 : 56);
+        for (let i = 0; i < count; i++) {
+          const ang = kind === 'ring' ? (i / count) * Math.PI * 2 : Math.random() * Math.PI * 2;
+          let sp, life, grav, drag, light, sHue;
+          if (kind === 'peony') {
+            sp = 110 + Math.random() * 70; life = 1.1 + Math.random() * 0.5; grav = 60; drag = 1.7;
+            light = Math.random() < 0.25 ? 92 : 62; sHue = hue;
+          } else if (kind === 'ring') {
+            sp = 150; life = 1.3; grav = 50; drag = 1.8;
+            light = 66; sHue = (i % 2 === 0) ? hue : (hue + 40) % 360;
+          } else {
+            sp = 50 + Math.random() * 110; life = 2.4 + Math.random() * 0.8; grav = 110; drag = 1.3;
+            light = 66; sHue = 40;
+          }
+          fw.sparks.push(makeSpark(x, y, Math.cos(ang) * sp, Math.sin(ang) * sp, life, sHue, light, 1.4 + Math.random() * 0.8, grav, drag));
+        }
+        fw.glows.push({ x, y, hue, life: 0.35, maxLife: 0.35 }); /* 開花の瞬間の光 */
+      }
+
+      function updateFireworks(dt) {
+        const fw = game.fireworks;
+
+        fw.launchTimer -= dt;
+        if (fw.launchTimer <= 0) {
+          launchFirework();
+          if (Math.random() < 0.3) launchFirework();
+          fw.launchTimer = 0.5 + Math.random() * 0.6;
+        }
+
+        for (let i = fw.rockets.length - 1; i >= 0; i--) {
+          const k = fw.rockets[i];
+          k.x += k.vx * dt; k.y += k.vy * dt;
+          if (Math.random() < dt * 40) {
+            fw.sparks.push(makeSpark(k.x, k.y, (Math.random() - 0.5) * 14, 20 + Math.random() * 20, 0.45, 40, 75, 1, 0, 1));
+          }
+          if (k.y <= k.targetY) {
+            explodeFirework(k.x, k.y);
+            fw.rockets.splice(i, 1);
+          }
+        }
+
+        for (let i = fw.sparks.length - 1; i >= 0; i--) {
+          const s = fw.sparks[i];
+          const f = Math.exp(-s.drag * dt);
+          s.vx *= f;
+          s.vy = s.vy * f + s.grav * dt;
+          s.x += s.vx * dt; s.y += s.vy * dt;
+          s.life -= dt;
+          if (s.life <= 0) fw.sparks.splice(i, 1);
+        }
+        for (let i = fw.glows.length - 1; i >= 0; i--) {
+          fw.glows[i].life -= dt;
+          if (fw.glows[i].life <= 0) fw.glows.splice(i, 1);
+        }
+      }
+
+      /* 夜の花火シーン。奥から 夜空→星→花火→富士山→キャラクターの順に描き、花火は山の陰から上がって見える。 */
+      function drawFireworksScene() {
+        const g = ctx.createLinearGradient(0, 0, 0, LOGICAL_H);
+        g.addColorStop(0, '#02040c');
+        g.addColorStop(0.55, '#0a1230');
+        g.addColorStop(1, '#1a2450');
+        ctx.fillStyle = g;
+        ctx.fillRect(0, 0, LOGICAL_W, LOGICAL_H);
+
+        ctx.fillStyle = '#fff';
+        for (const s of FIREWORKS_STARS) {
+          ctx.globalAlpha = 0.3 + 0.7 * (0.5 + 0.5 * Math.sin(game.summitTimer * s.speed + s.phase));
+          ctx.beginPath(); ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2); ctx.fill();
+        }
+        ctx.globalAlpha = 1;
+
+        /* --- 3. 花火(光が重なると明るくなるよう加算合成で描く) --- */
+        drawFireworks();
+
+        const peakY = drawSummitFuji();
+        drawSummitCharacter(peakY);
+      }
+
+      function drawFireworks() {
+        const fw = game.fireworks;
+        ctx.save();
+        ctx.globalCompositeOperation = 'lighter';
+
+        for (const gl of fw.glows) {
+          const a = gl.life / gl.maxLife;
+          const rad = 70 * (1.4 - a * 0.6);
+          const rg = ctx.createRadialGradient(gl.x, gl.y, 0, gl.x, gl.y, rad);
+          rg.addColorStop(0, `hsla(${gl.hue},100%,80%,${0.55 * a})`);
+          rg.addColorStop(1, `hsla(${gl.hue},100%,60%,0)`);
+          ctx.fillStyle = rg;
+          ctx.fillRect(gl.x - rad, gl.y - rad, rad * 2, rad * 2);
+        }
+
+        ctx.lineCap = 'round';
+        for (const k of fw.rockets) {
+          ctx.strokeStyle = 'rgba(255,225,170,0.85)';
+          ctx.lineWidth = 2;
+          ctx.beginPath(); ctx.moveTo(k.x - k.vx * 0.07, k.y - k.vy * 0.07); ctx.lineTo(k.x, k.y); ctx.stroke();
+        }
+
+        for (const s of fw.sparks) {
+          const a = Math.max(0, s.life / s.maxLife);
+          ctx.strokeStyle = `hsla(${s.hue},100%,${s.light}%,${a})`;
+          ctx.lineWidth = s.size;
+          ctx.beginPath(); ctx.moveTo(s.x - s.vx * 0.04, s.y - s.vy * 0.04); ctx.lineTo(s.x, s.y); ctx.stroke();
+        }
+        ctx.restore();
+      }
+
+      function lerpColor(a, b, t) {
+        const pa = hexToRgb(a), pb = hexToRgb(b);
+        const r = Math.round(pa.r + (pb.r - pa.r) * t);
+        const g = Math.round(pa.g + (pb.g - pa.g) * t);
+        const bl = Math.round(pa.b + (pb.b - pa.b) * t);
+        return `rgb(${r},${g},${bl})`;
+      }
+      function hexToRgb(hex) {
+        const n = parseInt(hex.slice(1), 16);
+        return { r: (n >> 16) & 255, g: (n >> 8) & 255, b: n & 255 };
+      }
+
+      /* ============ HUD UPDATE ============ */
+      /* 前回HUDに反映した値。同じ値のときはDOMを書き換えない(書き換えるたびに再描画が走るため) */
+      let _hudAlt = null, _hudPct = null;
+      function updateHUD() {
+        const a = Math.round(game.altitude);
+        /* バーの幅は0.1%刻み(幅150px程度のバーで約0.15px)で十分なので、その単位でしか更新しない */
+        const pct = Math.round(Math.min(100, (game.altitude / TARGET_ALT) * 100) * 10) / 10;
+        if (a !== _hudAlt) {
+          _hudAlt = a;
+          ui.altValue.textContent = a + ' m';
+          ui.progressText.textContent = `現在地 ${a}m / ${TARGET_ALT}m`;
+        }
+        if (pct !== _hudPct) {
+          _hudPct = pct;
+          ui.progressFill.style.width = pct + '%';
+        }
+      }
+
+      /* ============ MAIN LOOP ============ */
+      function loop(ts) {
+        if (!game.lastTs) game.lastTs = ts;
+        let dt = (ts - game.lastTs) / 1000;
+        dt = Math.min(dt, 0.05);
+        game.lastTs = ts;
+
+        if ((game.state === STATE.PLAY || game.state === STATE.SUMMIT) && !game.paused) {
+          update(dt);
+          draw();
+          updateHUD();
+        }
+        requestAnimationFrame(loop);
+      }
+      requestAnimationFrame(loop);
+
+      /* ============ INPUT ============ */
+      function clampPlayerX(x) {
+        return Math.max(ROAD_LEFT + PLAYER_R + 4, Math.min(ROAD_RIGHT - PLAYER_R - 4, x));
+      }
+
+      ui.canvas.addEventListener('pointerdown', (e) => {
+        if (!isPlaying()) return;
+        game.dragging = true;
+        game.dragLastX = e.clientX;
+        ui.canvas.setPointerCapture(e.pointerId);
+      });
+      ui.canvas.addEventListener('pointermove', (e) => {
+        if (!game.dragging || !isPlaying()) return;
+        const rect = ui.canvasWrap.getBoundingClientRect();
+        const scale = LOGICAL_W / rect.width;
+        const deltaX = (e.clientX - game.dragLastX) * scale;
+        game.dragLastX = e.clientX;
+        game.player.x = clampPlayerX(game.player.x + deltaX);
+      });
+      /* 同じ処理を複数のイベントに登録する */
+      function onEvents(target, types, handler) { types.forEach(type => target.addEventListener(type, handler)); }
+      onEvents(ui.canvas, ['pointerup', 'pointercancel', 'pointerleave'], () => { game.dragging = false; });
+
+      /* 加速状態(game.accelerating)と加速ボタンの見た目を同時に切り替える。 */
+      function setBoost(on) {
+        game.accelerating = on;
+        ui.boostBtn.classList.toggle('active', on);
+      }
+
+      /* キー入力(左右移動・加速)。ポーズ切り替えもここで処理する。 */
+      function handleKey(e, down) {
+        const key = (e.key || '').toLowerCase();
+        if (key === 'arrowleft' || key === 'a') game.keyLeft = down;
+        if (key === 'arrowright' || key === 'd') game.keyRight = down;
+        if (key === ' ' || key === 'shift') setBoost(down);
+        /* PC向け: P または Esc キーでポーズ/再開を切り替え */
+        if (down && (key === 'p' || key === 'escape')) setPaused(!game.paused);
+      }
+      window.addEventListener('keydown', (e) => handleKey(e, true));
+      window.addEventListener('keyup', (e) => handleKey(e, false));
+
+      function applyKeyboardMove(dt) {
+        const step = KEYBOARD_MOVE_SPEED * dt;
+        if (game.keyLeft) game.player.x = clampPlayerX(game.player.x - step);
+        if (game.keyRight) game.player.x = clampPlayerX(game.player.x + step);
+      }
+
+      ui.boostBtn.addEventListener('pointerdown', (e) => {
+        e.stopPropagation();
+        setBoost(true);
+        ui.boostBtn.setPointerCapture(e.pointerId);
+      });
+      onEvents(ui.boostBtn, ['pointerup', 'pointercancel', 'pointerleave'], (e) => {
+        e.stopPropagation();
+        setBoost(false);
+      });
+
+      /* ============ PAUSE(一時停止) ============ */
+
+      function setPaused(value) {
+        if (value && game.state !== STATE.PLAY) return; /* プレイ中以外(日の出シーン等)では止めない */
+        game.paused = value;
+        ui.pauseOverlay.classList.toggle('hidden', !game.paused);
+        ui.endingBtn.classList.toggle('hidden', !game.clearedModes[game.selectedMode]); /* プレイ中のモードを登頂済みなら、ポーズ中にそのエンディングを見られる */
+        if (game.paused) {
+          /* 操作中の状態をいったん解除(ポーズ中に押しっぱなしのまま固まらないように) */
+          game.dragging = false; game.keyLeft = false; game.keyRight = false;
+          setBoost(false);
+        }
+      }
+      ui.pauseBtn.addEventListener('click', () => setPaused(true));
+      ui.resumeBtn.addEventListener('click', () => setPaused(false));
+
+      /* ============ SCREEN FLOW ============ */
+      ui.startBtn.addEventListener('click', () => {
+        showScreen('play');
+        resetGame();
+      });
+
+      /* ポーズ中に、プレイ中のモードのエンディングだけを再生する(今回のプレイは打ち切り、暗転明けのシーンから始める)。 */
+      ui.endingBtn.addEventListener('click', () => {
+        if (!game.clearedModes[game.selectedMode]) return;
+        showScreen('play');
+        resetGame();
+        game.endingReplay = true;
+        game.altitude = TARGET_ALT;
+        setState(STATE.SUMMIT);
+        game.summitTimer = SUMMIT_T2; /* EXIT・暗転を飛ばして、フェードインから再生する */
+        initFireworks();
+        updateHUD();
+      });
+
+      ui.retryBtn.addEventListener('click', () => {
+        hideUnlockToast();
+        refreshModeSelect();
+        showScreen('start');
+      });
+
+      /* ============ MODE SELECT / 登頂フラグ ============ */
+      function loadSummitCleared() {
+        try {
+          game.summitCleared = sessionStorage.getItem(SUMMIT_CLEARED_STORAGE_KEY) === '1';
+          Object.keys(GAME_MODES).forEach(mode => {
+            if (sessionStorage.getItem(MODE_CLEARED_STORAGE_PREFIX + mode) === '1') game.clearedModes[mode] = true;
+          });
+        }
+        catch (e) { /* sessionStorageが使えない環境ではメモリ上のフラグのみ(リロードで消える) */ }
+        /* モード別フラグの導入前に登頂した場合: 最初の登頂は必ず普通モードなので、普通モードを登頂済みとみなす。 */
+        if (game.summitCleared && !Object.keys(game.clearedModes).length) game.clearedModes[DEFAULT_MODE] = true;
+      }
+
+      function markSummitCleared() {
+        game.summitCleared = true;
+        game.clearedModes[game.selectedMode] = true;
+        try {
+          sessionStorage.setItem(SUMMIT_CLEARED_STORAGE_KEY, '1');
+          sessionStorage.setItem(MODE_CLEARED_STORAGE_PREFIX + game.selectedMode, '1');
+        } catch (e) { }
+      }
+
+      /* 登頂済みならモード選択を表示。未登頂なら非表示にして普通モードに固定する。 */
+      function refreshModeSelect() {
+        const box = ui.modeSelect;
+        if (!game.summitCleared) game.selectedMode = DEFAULT_MODE;
+        box.classList.toggle('hidden', !game.summitCleared);
+        ui.screens.start.classList.toggle('mode-hard', game.selectedMode === 'hard');
+        ui.screens.result.classList.toggle('mode-hard', game.selectedMode === 'hard');
+        box.querySelectorAll('.mode-btn').forEach(btn => {
+          btn.classList.toggle('selected', btn.dataset.mode === game.selectedMode);
+        });
+      }
+
+      document.querySelectorAll('#modeSelect .mode-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          if (!game.summitCleared || !GAME_MODES[btn.dataset.mode]) return;
+          game.selectedMode = btn.dataset.mode;
+          refreshModeSelect();
+        });
+      });
+
+      function fmtTime(sec) {
+        const m = Math.floor(sec / 60);
+        const s = Math.floor(sec % 60);
+        return m + ':' + String(s).padStart(2, '0');
+      }
+
+      function showResult() {
+        const { resultTag, resultTitle, resultAlt, resultTime, summitLink, shareBtn, gameoverScene, gameoverBubbleText } = ui;
+
+        const finalAlt = Math.round(game.altitude);
+        const timeStr = game.endingReplay ? '-' : fmtTime(game.elapsed); /* エンディング再生ではタイムが無いのでハイフン */
+
+        resultAlt.textContent = finalAlt + ' m';
+        resultTime.textContent = timeStr;
+        resultTag.textContent = 'RESULT';
+
+        if (game.successFlag) {
+          resultTitle.textContent = '登頂成功！';
+          summitLink.classList.remove('hidden');
+          summitLink.href = SUMMIT_URL;
+          gameoverScene.classList.add('hidden'); /* 成功時はキャラクターの吹き出しは出さない */
+        } else {
+          resultTitle.textContent = '力尽きちゃった…！';
+          summitLink.classList.add('hidden');
+          gameoverBubbleText.textContent = GAME_OVER_MESSAGES[game.deathStageKey] || GAME_OVER_MESSAGE_FALLBACK;
+          gameoverScene.classList.remove('hidden');
+        }
+
+        let shareText = game.successFlag
+          ? `富士山登頂成功！標高${finalAlt}mを制覇、タイム${timeStr}！「ぺんざむの！富士山のぼれるかな？」`
+          : `標高${finalAlt}mまで登った！タイム${timeStr}「ぺんざむの！富士山のぼれるかな？」`;
+        if (GAME_URL) {
+          shareText += ' ' + GAME_URL;
+        }
+
+        shareBtn.onclick = () => {
+          const url = 'https://twitter.com/intent/tweet?text=' + encodeURIComponent(shareText);
+          window.open(url, '_blank', 'noopener');
+        };
+
+        showScreen('result');
+      }
+
+      /* ============ INIT ============ */
+      for (let i = 0; i < MAX_LIVES; i++) {
+        const heart = document.createElement('div');
+        heart.className = 'life-heart';
+        ui.livesBox.appendChild(heart);
+      }
+      setState(STATE.IDLE);
+      resizeCanvas();
+      const titleLogoReady = initTitleLogoAsset(); /* ASSET_CONFIG.titleLogo.src が設定されていれば画像ロゴに差し替え */
+      initSpeechBubbleShape(); /* 吹き出しを実寸に合わせて描く */
+      const resultCharacterReady = initResultCharacterAsset();
+      /* すべての画像の読み込みと差し替えが終わってから、スタート画面を表示する(それまでは開始ボタンも押せない)。 */
+      Promise.all([titleLogoReady, resultCharacterReady, preloadStartAssets()]).finally(() => {
+        loadSummitCleared();
+        refreshModeSelect();
+        showScreen('start');
+      });
+
+    })();
+
+  </script>
+</body>
+
+</html>
