@@ -1,6 +1,6 @@
 /* ぺんざむの！富士山のぼれるかな？ ― Service Worker
    リリースごとに VERSION を index.html のバージョンに合わせて更新すること(古いキャッシュが削除される)。 */
-const VERSION = 'v1.03.00';
+const VERSION = 'v1.04.00';
 const CACHE_PRECACHE = 'penzamu-fuji-precache-' + VERSION;
 const CACHE_RUNTIME = 'penzamu-fuji-runtime-' + VERSION;
 

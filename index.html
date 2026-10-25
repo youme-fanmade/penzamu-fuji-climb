@@ -765,7 +765,7 @@
           <button class="mode-btn" type="button" data-mode="hard">生きむずモード</button>
         </div>
         <button class="start-btn" id="startBtn">のぼりはじめる</button>
-        <a href="https://x.com/019_nepnep/status/2110302005814268345" target="_blank" rel="noopener" class="result-link">お祝いメッセージを募集中！→</a>
+        <a href="https://x.com/youmenosay/status/2114341204276232532" target="_blank" rel="noopener" class="result-link">🔗誕生祭2026のお知らせはこちら！</a>
         <div class="rules">
           【ご注意】<br>
           本コンテンツは<br>
@@ -775,7 +775,7 @@
           youmenosay様や陽葵優叶様への<br>
           お問い合わせはご遠慮ください。
         </div>
-        <div class="version-tag">v1.03.00</div>
+        <div class="version-tag">v1.04.00</div>
       </div>
     </section>
 
@@ -853,7 +853,7 @@
           <div class="v" id="resultTime">0:00</div>
         </div>
       </div>
-      <a href="#" target="_blank" rel="noopener" class="result-link hidden" id="summitLink">登頂したぺんざむを見に行く！→</a>
+      <a href="#" target="_blank" rel="noopener" class="result-link hidden" id="summitLink">🔗登頂したぺんざむを見に行く！</a>
       <div class="result-actions">
         <button class="btn-share" id="shareBtn">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="#fff">
@@ -946,7 +946,7 @@
 
       /* ============ CONFIG ============ */
       /* Xシェア本文に含めるゲームURL。 */
-      const HASH_TAG = '#youmenosay\n#陽葵優叶';
+      const HASH_TAG = '#youmenosay\n#陽葵優叶誕生祭2026';
       const GAME_URL = window.location.href || '';
       const SUMMIT_URL = 'https://vt.tiktok.com/ZSbPR3QS1/';
       /* 論理サイズ(縦16:横9)。背景タイルは幅LOGICAL_Wに合わせ、高さは画像の縦横比で決まる。 */
@@ -2616,8 +2616,8 @@
         }
 
         let shareText = game.successFlag
-          ? `富士山登頂成功！標高${finalAlt}mを制覇、タイム${timeStr}！\n「ぺんざむの！富士山のぼれるかな？」`
-          : `標高${finalAlt}mまで登った！タイム${timeStr}！\n「ぺんざむの！富士山のぼれるかな？」`;
+          ? `富士山登頂成功！標高${finalAlt}mを制覇、タイム${timeStr}！「ぺんざむの！富士山のぼれるかな？」`
+          : `標高${finalAlt}mまで登った！タイム${timeStr}「ぺんざむの！富士山のぼれるかな？」`;
         shareText += '\n\n' + HASH_TAG;
 
         if (GAME_URL) {
