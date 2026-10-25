@@ -775,7 +775,7 @@
           youmenosay様や陽葵優叶様への<br>
           お問い合わせはご遠慮ください。
         </div>
-        <div class="version-tag">v1.04.00</div>
+        <div class="version-tag">v1.04.01</div>
       </div>
     </section>
 
@@ -2616,8 +2616,8 @@
         }
 
         let shareText = game.successFlag
-          ? `富士山登頂成功！標高${finalAlt}mを制覇、タイム${timeStr}！「ぺんざむの！富士山のぼれるかな？」`
-          : `標高${finalAlt}mまで登った！タイム${timeStr}「ぺんざむの！富士山のぼれるかな？」`;
+          ? `富士山登頂成功！標高${finalAlt}mを制覇、タイム${timeStr}！\n「ぺんざむの！富士山のぼれるかな？」`
+          : `標高${finalAlt}mまで登った！タイム${timeStr}！\n「ぺんざむの！富士山のぼれるかな？」`;
         shareText += '\n\n' + HASH_TAG;
 
         if (GAME_URL) {
